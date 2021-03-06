@@ -42,7 +42,11 @@
                     font-size: 14px;
                     line-height: 2;
                     color: #efefef;
-                    margin-bottom: 1rem;
+                    padding-bottom: 1rem;
+                }
+                
+                p:last-child{
+                    padding-bottom: 0;
                 }
             }
         }
