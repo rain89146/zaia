@@ -5,7 +5,7 @@ export default function Privacy() {
             {
                 contents:[
                     '<p>Last updated: 1/5/2020</p>',
-                    '<br>',
+                    '<p></p>',
                     '<p>ZAIA operates http://zaia.com</p>',
                     '<p>This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Site. We use your Personal Information only for providing and improving the Site. By using the Site, you agree to the collection and use of information in accordance with this policy.</p>',
                 ]
@@ -86,11 +86,12 @@ export default function Privacy() {
                         Privacy Policy on this page will constitute your acknowledgment of the modifications and your
                         consent to abide and be bound by the modified Privacy Policy.
                     </p>`,
+                    '<p></p>',
                     `<p>
                         If we make any material changes to this Privacy Policy, we will notify you either through the email
                         address you have provided us, or by placing a prominent notice on our website.
                     </p>`,
-                    '<br>'
+                    '<p></p>',
                     `<p>Contact Us</p>`,
                     `<p>If you have any questions about this Privacy Policy, please contact us.</p>`
                 ]
