@@ -1,0 +1,76 @@
+.con{
+    position: relative;
+    width: 100%;
+
+    .title{
+        width: 1024px;
+        margin: auto;
+        padding-bottom: 2rem;
+
+        h1{
+            font-style: normal;
+            font-weight: 200;
+            font-size: 40px;
+            line-height: 75px;            
+            color: #FFFFFF;
+        }
+    }
+
+    .card{
+        width: 33.333%;
+        position: relative;
+        padding: 5px;
+
+        img{
+            object-fit: cover;
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+    .con{
+        position: relative;
+        width: 100%;
+    
+        .title{
+            width: auto;
+            margin: auto;
+            padding: 0 2rem;
+            padding-bottom: 1rem;
+    
+            h1{
+                font-style: normal;
+                font-weight: 200;
+                font-size: 25px;
+                line-height: 1.5;            
+                color: #FFFFFF;
+                margin: 0;
+            }
+        }
+    
+        .card{
+            width: 100%;
+            position: relative;
+            padding: 5px 0;
+    
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -1,0 +1,302 @@
+.con{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: #1C2022;
+
+    .holder{
+        width: 1024px;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+
+        .menus{
+            width: calc(100% - 50px);
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .menucon{
+                width: 100%;
+                height: 100%;
+
+                ul{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: row;
+                    margin-left: -35px;
+                    
+                    li{
+                        padding: 0 35px;
+                        position: relative;
+
+                        .menutab{
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+                            transition: all ease .5s;
+
+                            h5{
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 28px;
+                                color: #7b7b7b;
+                            }
+                            a{
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 28px;
+                                color: #7b7b7b;
+                            }
+                        }
+
+                        .menutab:hover{
+                            h5{
+                                color: #fff;
+                            }
+                            a{
+                                color: #fff;
+                            }
+                        }
+
+                        .submenu{
+                            display: none;
+                            position: absolute;
+                            top: 0;
+                            margin-top: 70px;
+                            left: 0;
+                            width: 100%;
+                            height: auto;
+                            transition: all ease-in-out .5s;
+                            z-index: 100;
+
+                            .submenucon{
+                                width: -webkit-fill-available;    
+                                margin-left: -.5rem;
+                                margin-right: -.5rem;
+                                height: auto;
+                                position: relative;
+                                background: #1C2022;
+
+                                ul{
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding: 0 1rem;
+                                    margin: 0;
+
+                                    li{
+                                        padding: 0;
+                                        display: flex;
+                                        justify-content: center;
+                                        padding-bottom: .7rem;
+                                        margin-bottom: .7rem;
+                                        border-bottom: 1px solid #CFCFCF;
+
+                                        a{
+                                            font-style: normal;
+                                            font-weight: 300;
+                                            font-size: 16px;
+                                            line-height: 26px;                                            
+                                            color: #7b7b7b;
+                                            transition: all ease .5s;
+                                        }
+
+                                        a:hover{
+                                            color: #fff;
+                                        }
+                                    }
+
+                                    li:first-child{
+                                        margin-top: .7rem;
+                                    }
+
+                                    li:last-child{
+                                        padding-bottom: 0;
+                                        border-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    li:hover{
+                        .submenu{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .searchcon{
+                button{
+                    i{
+
+                    }
+                }
+            }
+        }
+
+        .logocon{
+            width: 50px;
+            height: 100%;
+            padding: 5px 0;
+
+            .iconcon{
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                .icon{
+                    width: 100%;
+                    height: 100%;
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}
+
+.mobilemenu{
+    display: none;
+
+    .menucon{
+        width: 100%;
+        height: 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background: #1C2022;
+
+        .menubtn{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px;
+            height: 100%;
+            padding: 14px;
+
+            .burger{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .bam{
+                    width: 100%;
+                    height: 2px;
+                    background: #fff;
+                    margin-bottom: 5px;
+                }
+                .bam:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .logo{
+            width: 85px;
+            height: 100%;
+            padding: 5px 0;
+            
+            .icon{
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+
+        .searchcon{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i{
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+    .con{
+        display: none;
+    }
+    .mobilemenu{
+        display: block;
+    
+        .menucon{
+            width: 100%;
+            height: 50px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+    
+            .menubtn{
+                position: absolute;
+                left: 0;
+                .burger{
+    
+                    .bam{
+    
+                    }
+                }
+            }
+    
+            .logo{
+                .icon{
+    
+                }
+            }
+    
+            .searchcon{
+                position: absolute;
+                right: 0;
+                button{
+                    i{
+    
+                    }
+                }
+            }
+    
+        }
+    }
+}

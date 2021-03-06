@@ -1,0 +1,167 @@
+.addresssection{
+    position: relative;
+    margin-bottom: 6rem;
+
+    .holder{
+        display: flex;
+        flex-wrap: nowrap;
+        align-self: stretch;
+
+        .titlecon{
+            width: 40%;
+
+            h1{
+                margin: 0;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 30px;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+                display: inline-block;
+                border-bottom: 1px solid #fff;
+                padding-bottom: 1rem;
+            }
+        }
+
+        .contentcon{
+            width: 60%;
+
+            .content{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 28px;
+
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.contactformsection{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    .contactformcon{
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+
+        .formcon{
+            flex: 6;
+            margin-top: 3rem;
+
+            .titlecon{
+                h1{
+                    margin: 0;
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 30px;
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .placeholder{
+            flex: 4;
+        }
+
+    }
+
+    .imagecon{
+        width: 40%;
+        height: 600px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        img{
+            object-fit: cover;
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+        
+    .contactformsection{
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        .contactformcon{
+            display: block;
+
+            .formcon{
+                margin-top: 0;
+                padding-top: calc( 230px + 3rem );
+                padding-left: 1rem;
+                padding-right: 1rem;
+
+                .titlecon{
+                    h1{
+                        font-size: 28px;
+                    }
+                }
+            }
+
+            .placeholder{
+                display: none;
+            }
+
+        }
+
+        .imagecon{
+            width: 100%;
+            height: 230px;
+        }
+    }
+
+    .addresssection{
+        position: relative;
+        margin-bottom: 3rem;
+        padding: 0 1rem;
+
+        .holder{
+            display: block;
+           
+            .titlecon{
+                width: 100%;
+    
+                h1{
+                    font-size: 28px;
+                }
+            }
+    
+            .contentcon{
+                width: 100%;
+                margin-top: 1rem;
+
+                .content{
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}

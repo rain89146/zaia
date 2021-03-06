@@ -1,0 +1,266 @@
+.bottomnav{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #1C2022;
+    padding: 2rem 0;
+
+    .navcon{
+        width: 100%;
+        height: auto;
+        position: relative;
+        width: 1024px;
+        margin: -20px;
+        margin: auto;
+
+        .sitemap{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: -20px;
+            padding-top: 20px;
+            padding-left: 5rem;
+            padding-right: 5rem;
+
+            .sitecol{
+                width: 20%;
+                padding: 20px;
+                
+                .title{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: #FFFFFF;
+                }
+
+                .listcon{
+                    margin-top: 16px;
+
+                    ul{
+                        li{
+                            margin-bottom: .7rem;
+
+                            a{
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 14px;
+                                line-height: 19px;                                
+                                color: #d8d8d8;
+                            }
+                        }
+
+                        li:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sitemapmobile{
+            display: none;
+
+            .sitemapmobilecon{
+
+
+                .sitemapmobileholder{
+                    padding: 0 1rem;
+                
+                    .sitemapitem{
+                        padding: 1rem 0;
+
+                        button{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+
+                            .sitemaptitle{
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #FFFFFF;
+                            }
+
+                            i{
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #FFFFFF;
+                                margin-left: auto;
+                            }
+                        }
+
+                        .drawer{
+                            padding-top: 1rem;
+
+                            .draweritem{
+                                padding: .5rem 0;
+
+                                a{
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 1.5;
+                                    color: #9F9F9F;
+                                }
+                            }
+
+                            .draweritem:last-child{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer{
+            .footercon{
+                border-top: 1px solid #484848;
+                margin-top: 30px;
+                padding-top: 30px;
+                display: flex;
+                flex-direction: row;
+
+                .disclaimer{
+                    display: flex;
+                    align-items: center;
+
+                    .year{
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #FFFFFF;
+                    }
+                    .rights{
+                        padding-left: 3rem;
+                        display: flex;
+                        align-items: center;
+                        color: #FFFFFF;
+
+                        .privacy{
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: #FFFFFF;
+                            padding-right: .5rem;
+                        }
+                        .cookie{
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: #FFFFFF;
+                            padding-left: .5rem;
+                        }
+                    }
+                }
+
+                .languageoption{
+                    margin-left: auto;
+                    display: flex;
+                    align-items: center;
+                    color: #9a9a9a;
+                    margin-right: -.5rem;
+
+                    .lan{
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #FFFFFF;
+                    }
+
+                    .opt{
+                        padding: 0 .5rem;
+
+                        button{
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: #9a9a9a;
+                        }
+
+                        .selected {
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+
+    .bottomnav{
+        background: #1C2022;
+        padding-bottom: 0;
+    
+        .navcon{
+            width: auto;
+            margin: 0;
+    
+            .sitemap{
+                display: none;
+            }
+
+            .sitemapmobile{
+                display: block;
+            }
+    
+            .footer{
+                .footercon{
+                    flex-direction: column-reverse;
+                    padding: 1rem;
+    
+                    .disclaimer{
+                        display: block;
+                        margin-top: 1.5rem;
+    
+                        .year{
+                            color: #777676;
+                        }
+                        .rights{
+                            padding: 0;
+                            padding-top: .5rem;
+                            color: #777676;
+    
+                            .privacy{
+                                color: #777676;
+                            }
+                            .cookie{
+                                color: #777676;
+                            }
+                        }
+                    }
+    
+                    .languageoption{
+                        margin: 0;
+                    }
+                }
+            }
+    
+        }
+    }
+}

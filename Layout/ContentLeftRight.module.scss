@@ -1,0 +1,78 @@
+.cntlcon{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+    flex-direction: row-reverse;
+
+    .left{
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+    .right{
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+}
+
+.cntrcon{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+
+    .left{
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+    .right{
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+    .cntlcon{
+        flex-direction: row;
+    
+        .left{
+            width: 100%;
+            padding: 2rem;
+        }
+        .right{
+            display: none;
+        }
+    }
+    
+    .cntrcon{
+    
+        .left{
+            display: none;
+        }
+        .right{
+            width: 100%;
+            padding: 2rem;
+        }
+    }
+}

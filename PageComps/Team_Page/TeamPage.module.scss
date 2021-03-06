@@ -1,0 +1,381 @@
+.PersonalInfoCon{
+    position: relative;
+
+    .p_titlecon{
+        h1{
+            font-style: normal;
+            font-weight: 200;
+            font-size: 40px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin: 0;
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    .p_contentholder{
+        display: flex;
+        flex-wrap: wrap;
+        align-self: stretch;
+
+        .p_contentcon{
+            width: 60%;
+            padding-right: 2rem;
+
+            .p_subtitlecon{
+                display: flex;
+                align-items: center;
+
+                .p_subtitleplaceholder{
+                    width: 50%;
+                    height: 1px;
+                    background: #FFFFFF;
+                }
+                .p_subtitle{
+                    width: 50%;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0.1em;
+
+                    color: #FFFFFF;
+                    padding-left: 2rem;
+                }
+            }
+
+            .p_content{
+                margin-top: 2rem;
+                padding-left: 2rem;
+
+                p{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 30px;
+                    letter-spacing: 0.1em;
+                    color: #FFFFFF;
+                }
+            }
+
+            .p_buttoncon{
+                margin-top: 6rem;
+                padding-left: 2rem;
+
+                button{
+                    padding: .8rem 5rem;
+                    background: #373F43;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                }
+
+                button:hover{
+                    background: #fff;
+                    color: #373F43;
+                }
+            }
+        }
+
+        .p_imagecon{
+            width: 40%;
+            height: 710px;
+            position: relative;
+
+            .image{
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                img{
+                    object-fit: cover;
+                }
+            }
+        }
+
+    }
+}
+
+.PersonalResCon{
+    position: relative;
+
+    .pr_subtitlecon{
+        display: flex;
+        align-items: center;
+
+        .pr_subplaceholder{
+            width: 50%;
+            height: 1px;
+            background: #FFFFFF;
+        }
+
+        .pr_subtitle{
+            width: 50%;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            padding-left: 2rem;
+        }
+    }
+
+    .pr_contentcon{
+        display: flex;
+        flex-wrap: wrap;
+        align-self: stretch;
+
+        .pr_imagecon{
+            width: 50%;
+            height: 778px;
+            position: relative;
+
+            .pr_image{
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                img{
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .pr_contentholder{
+            width: 50%;
+            height: 100%;
+
+            .pr_holder{
+                width: 100%;
+                height: 100%;
+                padding-left: 2rem;
+
+                p{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 30px;
+                    letter-spacing: 0.1em;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+.PersonalProCon{
+    position: relative;
+
+    .pr_teamesubtitle{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin-bottom: 1rem;
+    }
+
+    .prcontentcon{
+        ul{
+            li{
+                p{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 30px;
+                    letter-spacing: 0.1em;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+
+    .PersonalInfoCon{
+        position: relative;
+    
+        .p_titlecon{
+            display: inline-block;
+            width: 100%;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            h1{
+                font-size: 28px;
+                padding-bottom: 0;
+            }
+        }
+
+        .p_titlecon::after{
+            content: '';
+            height: 1px;
+            width: 20%;
+            background: #fff;
+            position: absolute;
+            margin-top: 1.5rem;
+        }
+    
+        .p_contentholder{
+            flex-direction: column-reverse;
+    
+            .p_contentcon{
+                width: 100%;
+                padding-right: 0;
+                padding: 1rem;
+    
+                .p_subtitlecon{
+                    display: flex;
+                    align-items: center;
+    
+                    .p_subtitleplaceholder{
+                        display: none;
+                    }
+                    .p_subtitle{
+                        width: 100%;
+                        font-size: 16px;
+                        padding-left: 0;
+                    }
+                }
+    
+                .p_content{
+                    margin-top: 1rem;
+                    padding-left: 0rem;
+    
+                    p{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 30px;
+                        letter-spacing: 0.1em;
+                        color: #FFFFFF;
+                    }
+                }
+    
+                .p_buttoncon{
+                    margin-top: 2rem;
+                    padding-left: 0;
+                    display: flex;
+                    justify-content: center;
+    
+                    button{
+                        padding: .6rem 3rem;
+                        background: #373F43;
+                        font-size: 14px;
+                    }
+                }
+            }
+    
+            .p_imagecon{
+                width: 100%;
+                height: 530px;
+                position: relative;
+    
+                .image{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+    
+                    img{
+                        object-fit: cover;
+                    }
+                }
+            }
+    
+        }
+    }
+
+    .PersonalResCon{
+        position: relative;
+    
+        .pr_subtitlecon{
+            display: flex;
+            align-items: center;
+    
+            .pr_subplaceholder{
+                display: none;
+            }
+    
+            .pr_subtitle{
+                width: 100%;
+                font-size: 16px;
+                padding-left: 1rem;
+            }
+        }
+    
+        .pr_contentcon{
+            flex-direction: column-reverse;
+    
+            .pr_imagecon{
+                width: 100%;
+                height: 530px;
+                margin-top: 3rem;
+            }
+    
+            .pr_contentholder{
+                width: 100%;
+                height: 100%;
+                padding: 0 1rem;
+    
+                .pr_holder{
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 0;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    .PersonalProCon{
+        position: relative;
+        padding: 0 1rem;
+    
+        .pr_teamesubtitle{
+            font-size: 16px;
+            margin-bottom: 1rem;
+        }
+    
+        .prcontentcon{
+            ul{
+                li{
+                    margin-bottom: .5rem;
+
+                    p{
+                        font-size: 14px;
+                        line-height: 30px;
+                    }
+                }
+                li:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

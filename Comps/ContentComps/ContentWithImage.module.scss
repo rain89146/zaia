@@ -1,0 +1,290 @@
+.con{
+    position: relative;
+    width: 1024px;
+    margin: auto;
+    padding-top: 6rem;
+
+    .content_item{
+        margin-bottom: 6rem;
+        display: flex;
+        flex-wrap: nowrap;
+
+        .contentcon{
+            width: 50%;
+
+            .maintitle{
+                h1{
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 54px;
+                    line-height: 65px;
+                    text-transform: uppercase;
+                    
+                    color: #FFFFFF;
+
+                    margin-top: 0;
+                }
+            }
+
+            .subtitle{
+                margin-bottom: 3rem;
+
+                h5{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 34px;
+                    color: #FFFFFF;
+                }
+            }
+
+            .contentholder{
+                width: 100%;
+                position: relative;
+
+                p{
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 2.5;
+
+                    color: #FFFFFF;
+
+                    margin-bottom: 2rem;
+                }
+
+                p:last-child{
+                    margin-bottom: 0;
+                }
+            }
+
+            .buttoncon{
+                margin-top: 7rem;
+                display: flex;
+                flex-direction: row;
+
+                button{
+                    flex: 6;
+                    height: 60px;
+                    border: 1px solid #FFFFFF;
+                    cursor: pointer;
+                    transition: all ease .5s;
+
+                    .text{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+
+                        color: #FFFFFF;
+                    }
+                }
+
+                button:hover{
+                    background: #FFFFFF;
+                    .text{
+                        color: #242b2f;
+                    }
+                }
+
+                .btnplaceholder{
+                    flex: 4
+                }
+            }
+
+            .mobilimages{
+                display: none;
+            }
+        }
+
+        .imagecon{
+            width: 50%;
+            height: 800px;
+            position: relative;
+            padding-left: 3rem;
+
+            .imageholder{
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                img{
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .content_item:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.ContentImageCard{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .con{
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+
+        img{
+            visibility: inherit;
+            position: absolute;
+            inset: 0px;
+            box-sizing: border-box;
+            padding: 0px;
+            border: none;
+            margin: auto;
+            display: block;
+            width: 0px;
+            height: 0px;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+            max-height: 100%;
+        }
+    }
+    .backgroundmock{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+
+    .con{
+        width: auto;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    
+        .content_item{
+            flex-direction: column;
+    
+            .contentcon{
+                width: 100%;
+    
+                .maintitle{
+                    h1{
+                        font-size: 24px;
+                        line-height: 1.5;   
+                        padding-bottom: 1rem;
+                        position: relative; 
+                    }
+
+                    h1:after{
+                        content:'';
+                        border-bottom: 1px solid #efefef;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 60%;
+                    }
+                }
+    
+                .subtitle{
+                    margin-bottom: 2rem;
+    
+                    h5{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 34px;
+                        color: #FFFFFF;
+                    }
+                }
+    
+                .contentholder{
+                    width: 100%;
+                    position: relative;
+                    margin-bottom: 2rem;
+    
+                    p{
+                        line-height: 2;    
+                        margin-bottom: 1rem;
+                    }
+    
+                    p:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+    
+                .buttoncon{
+                    margin-top: 3rem;
+    
+                    button{
+                        flex: 6;
+                        height: 50px;
+    
+                        .text{
+                            font-size: 14px;
+                        }
+                    }
+
+                    .btnplaceholder{
+                        flex: 4
+                    }
+                }
+
+                .mobilimages{
+                    display: block;
+                    margin-top: 3rem;
+                    width: 100%;
+    
+                    .mb_imgcon{
+                        width: 100%;
+                        height: auto;
+
+                        .mb_img{
+                            padding: 5px 0;
+
+                            img{
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .imagecon{
+                display: none;
+            }
+        }
+        .content_item:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+}

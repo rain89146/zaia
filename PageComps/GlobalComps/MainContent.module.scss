@@ -1,0 +1,96 @@
+.con{
+    position: relative;
+    padding: 0 1rem;
+    
+    .titlecon{
+        display: flex;
+
+        .title{
+            width: 100%;
+            
+            h1{
+                font-style: normal;
+                font-weight: 200;
+                font-size: 40px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin: 0;
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+    .contentcon{
+        display: flex;
+
+        .placeholder{
+            width: 25%;
+            border-top: 1px solid #fff;
+        }
+        .content{
+            width: 75%;
+            padding-left: 3rem;
+
+            p{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 2;
+                letter-spacing: 0.1em;
+                color: #FFFFFF;
+                margin-bottom: .8rem;
+            }
+
+            p:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+
+    .con{
+    
+        .titlecon{
+            display: block;
+
+            .title{                
+                h1{
+                    font-size: 28px;
+                }
+            }
+            .placeholder{
+                display: none;
+            }
+        }
+        .contentcon{
+            display: block;
+    
+            .placeholder{
+                width: 25%;
+                border-top: 1px solid #fff;
+            }
+            .content{
+                width: 100%;
+                padding: 0;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    
+}

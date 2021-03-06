@@ -1,0 +1,26 @@
+.FlexColoumn{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+    .FlexColoumn{
+        flex-direction: column;
+    }
+}

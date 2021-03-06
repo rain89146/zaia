@@ -1,0 +1,51 @@
+.titlecon{
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+
+    h1{
+        font-style: normal;
+        font-weight: 200;
+        font-size: 40px;
+        color: #FFFFFF;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+    .titlecon{
+        
+        h1{
+            font-size: 28px;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        h1:after{
+            content: "";
+            height: 1px;
+            width: 25%;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-top: 1rem;
+        }
+    }
+    
+}

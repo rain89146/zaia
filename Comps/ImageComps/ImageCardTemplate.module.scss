@@ -1,0 +1,79 @@
+.imagecard{
+    flex: 1;
+    height: 530px;
+    position: relative;
+
+    .con{
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        a{
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+
+        .content{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 36px;
+                line-height: 42px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin: 0;
+            }
+        }
+
+        .imageholder{
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+    .imagecard{
+        width: 100%;
+        height: 190px;
+    
+        .con{    
+            .content{
+                h1{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

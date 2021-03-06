@@ -1,0 +1,60 @@
+.section{
+    width: 1024px;
+    margin: auto;
+}
+
+.margintop_1{
+    margin-top: 1rem;
+}
+
+.margintop_3{
+    margin-top: 3rem;
+
+}
+
+.margintop_6{
+    margin-top: 6rem;
+}
+
+.margintop_9{
+    margin-top: 9rem;
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    .section{
+        width: 1024px;
+        margin: auto;
+    }
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+    .section{
+        width: 769px;
+        margin: auto;
+    }
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+    .section{
+        width: 429px;
+        margin: auto;
+    }
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+    .section{
+        width: auto;
+        margin: auto;
+    }
+
+    .margintop_6{
+        margin-top: 3rem;
+    }
+
+    .margintop_9{
+        margin-top: 6rem;
+    }
+}

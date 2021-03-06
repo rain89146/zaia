@@ -1,0 +1,48 @@
+.con{
+    width: 100%;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+    .logo{
+        flex: 1;
+        height: 115px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+
+        img{
+            object-fit: contain;
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+    .con{
+        padding: 0;
+        
+        .logo{
+            flex: unset;
+            width: 33.33%;
+        }
+    }
+}

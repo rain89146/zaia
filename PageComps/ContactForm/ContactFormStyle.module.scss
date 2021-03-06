@@ -1,0 +1,160 @@
+.con{
+    position: relative;
+
+    .titlecon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-style: normal;
+            font-weight: 200;
+            font-size: 36px;
+            line-height: 42px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+            margin: 0;
+        }
+    }
+
+    .formcon{
+        width: 100%;
+        position: relative;
+        margin: 3rem 0;
+        margin-bottom: 0;
+
+        .formelement{
+            margin-bottom: 1.5rem;
+
+            .inpitcon{
+                width: 100%;
+                position: relative;
+
+                .input{
+                    width: 100%;
+                    position: relative;
+                    background: #333333;
+
+                    input{
+                        width: 100%;
+                        padding: .7rem 1rem;
+                        font-size: 16px;
+                        color: #fff;
+                        background: transparent;
+                        border: 0;
+                        outline: none;
+                        transition: all ease .5s;
+                    }
+                }
+
+            }
+
+            .textcon{
+                width: 100%;
+                position: relative;
+
+                .textareacon{
+                    width: 100%;
+                    position: relative;
+                    background: #333333;
+
+                    textarea{
+                        appearance: none;
+                        width: 100%;
+                        padding: .8rem 1rem;
+                        border: 0;
+                        color: #fff;
+                        background: transparent;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        outline: none;
+                        transition: all ease .5s;
+                    }
+                }
+            }
+
+            .labelcon{
+                margin-bottom: 7px;
+
+                label{
+                    color: #fff;
+                    font-weight: 200;
+                    font-size: 16px;
+                    letter-spacing: 0.1em;
+                    color: #FFFFFF;
+
+                    span{
+                        color: red;
+                        font-weight: bold;
+                        padding-left: 5px;
+                    }
+                }
+            }
+
+            .errorbox{
+                padding: .5rem 1rem;
+                color: #ff5959;
+                font-size: 14px;
+            }
+        }
+        .formelement:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .buttoncon{
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        button{
+            width: 50%;
+            margin: 0 auto;
+            padding: .5rem 1rem;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #969696;
+            background: #373F43;
+        }
+    }
+}
+
+.messagecon{
+    padding: 3rem;
+    padding-bottom: 0;
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+
+    .con{
+        position: relative;
+    
+        .buttoncon{
+            button{
+                width: 100%;
+            }
+        }
+    }
+}

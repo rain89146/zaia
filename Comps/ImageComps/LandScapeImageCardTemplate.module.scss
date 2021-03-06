@@ -1,0 +1,55 @@
+.con{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    .holder{
+        width: 100%;
+        height: 100%;
+
+        .content{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 10;
+        }
+        .dropback{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #000;
+            z-index: 1;
+            opacity: .6;
+        }
+        .imagecon{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+    .con{
+        height: 280px;
+    }
+}
