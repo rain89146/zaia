@@ -16,7 +16,7 @@ export default function ContentGridGallery(props) {
                         gridArea: `${i+1} / 1 / auto / auto`
                     }
 
-                    if(typeof img === 'object'){
+                    if(img.length == 2){
                         return (
                             <div key={i} style={girdstyle}>
                                 <div className={styles.gridholder}>
@@ -39,7 +39,7 @@ export default function ContentGridGallery(props) {
                             <div key={i} style={girdstyle}>
                                 <div className={styles.gridrow}>
                                     <div className={styles.imagecon}>
-                                        <ImageCard src={img} />
+                                        <ImageCard src={img[0]} />
                                     </div>
                                 </div>
                             </div>
@@ -53,30 +53,15 @@ export default function ContentGridGallery(props) {
 
 function grid_layout_mixer(sets){
 
-    let total = sets.length;
-
-    let li = 0;
-    let arr = [];
-    for(let i = 0; i < total; i ++){
-        if(li < total){
-
-            if( i % 3 === 0 && i !== 0){
-                let end_index = li +1;
-                let start_item = sets[li];
-                let end_item = sets[end_index];
-                let inner = (typeof end_item !== 'undefined')
-                    ?   [start_item, end_item]
-                    :   start_item;
-
-                arr.push(inner);
-                li = end_index + 1;
-            }else{
-
-                arr.push(sets[li]);
-                li ++;
-            }  
-
+    let total = sets.length, res = [];
+    for(let i = 0; i<total; i++){
+        if( i%4 != 3 ){
+            let tem = [sets[i]];
+            if( i%4 == 2 && (total > (i+1))){
+                tem.push(sets[i+1]);
+            }
+            res.push(tem);
         }
     }
-    return arr
+    return res;
 }
