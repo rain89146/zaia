@@ -1,6 +1,6 @@
 import styles from './Modal.module.scss';
 export default function Modal(props) {
-    let {is_open, controlButton} = props;
+    let {is_open, controlButton, is_mini} = props;
 
     //  View class
     let view_class = (is_open) 
@@ -15,12 +15,35 @@ export default function Modal(props) {
     //  Returns nothing when is close
     if(is_open === false){ return null }
 
+    //  modal style
+    return ( is_mini === undefined) ? <RegularModal {...props} viewclass={view_class}/> : <MiniModal {...props} viewclass={view_class}/>
+}
+
+function RegularModal(props) {
+    let {viewclass} = props;
     return (
         <>
-        <div className={view_class}>
+        <div className={viewclass}>
             <div className={styles.diaglogBack}>
                 <div className={styles.dialogBody}>
                     <div className={styles.dialogCon}>
+                        <section>{ props.children }</section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </>
+    )
+}
+
+function MiniModal(props) {
+    let {viewclass} = props;
+    return (
+        <>
+        <div className={viewclass}>
+            <div className={styles.m_diaglogBack}>
+                <div className={styles.m_dialogBody}>
+                    <div className={styles.m_dialogCon}>
                         <section>{ props.children }</section>
                     </div>
                 </div>

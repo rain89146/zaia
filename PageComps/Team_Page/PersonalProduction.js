@@ -1,16 +1,21 @@
 import React, { Fragment } from 'react'
-import useParseHtml from '../../hooks/useParseHtml';
+import Tools from '../../GlobalTools/Tools';
 import styles from './TeamPage.module.scss'
 
 export default function PersonalProduction(props) {
-    console.log(props);
-    let {subtitle,contents} = props;
+
+    //
+    let {subtitle, contents} = props;
+
+    //  
+    const tools = new Tools();
+
     return (
         <div className={styles.PersonalProCon}>
             <div className={styles.pr_teamesubtitle}>{subtitle}</div>
             <div className={styles.prcontentcon}>{
                 contents.map((cnt,i)=>{
-                    cnt = useParseHtml(cnt);
+                    cnt = tools.parse_html(cnt);
                     return <Fragment key={i}>{cnt}</Fragment>
                 })
             }</div>

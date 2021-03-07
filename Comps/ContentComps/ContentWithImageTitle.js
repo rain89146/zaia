@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from 'react'
-import useParseHtml from '../../hooks/useParseHtml';
 import ImageCard from '../ImageComps/ImageCard';
 import styles from './ContentWithImageTitle.module.scss';
 import Modal from '../../Comps/ModalComps/Modal'
 import ContactForm from '../../PageComps/ContactForm/ContactForm';
+import Tools from '../../GlobalTools/Tools';
 export default function ContentWithImageTitle(props) {
 
     //  
@@ -12,12 +12,15 @@ export default function ContentWithImageTitle(props) {
     //
     let {contents, image, title} = props;
 
+    //  
+    const tools = new Tools();
+
     //  Contents
     contents = (typeof contents !== 'undefined')
         ?   <div className={styles.content}>
             {
                 contents.map((cnt,i) => {
-                    return <Fragment key={i}>{useParseHtml(cnt)}</Fragment>
+                    return <Fragment key={i}>{tools.parse_html(cnt)}</Fragment>
                 })
             }
             </div>

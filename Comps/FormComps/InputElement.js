@@ -1,7 +1,11 @@
-import React, {useState, useRef} from 'react'
+import React, {useState} from 'react'
 import useInputValidation from '../../hooks/useInputValidation';
+import Tools from '../../GlobalTools/Tools';
 
 export default function InputElement(props) {
+
+    //  
+    const tools = new Tools();
 
     //  Get all values from props
     let {label, element_type, name, max, placeholder, datatype, datatype_error, error, required, has_error, value, styles} = props;
@@ -12,9 +16,6 @@ export default function InputElement(props) {
     //  Set the state
     const [InputValue, setInputValue] = useState(value);
     const [InputError, setInputError] = useState(error);
-
-    //  Reffere to input element
-    const inputElement = useRef(null);
 
     //  On change
     const inputOnChange = (e) => {
@@ -32,7 +33,7 @@ export default function InputElement(props) {
     const inputOnBlur = (e) => {
         let {value} = e.target; 
         if(value !== ''){
-            let validation_result = useInputValidation(value, datatype, datatype_error);
+            let validation_result = tools.input_validation(value, datatype, datatype_error);
             let {result, message} = validation_result;
 
             if(result === false){

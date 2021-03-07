@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react'
-import useParseHtml from '../../hooks/useParseHtml';
+import Tools from '../../GlobalTools/Tools';
 import ContactForm from '../../PageComps/ContactForm/ContactForm';
 import ImageCard from '../ImageComps/ImageCard';
 import Modal from '../ModalComps/Modal';
@@ -9,7 +9,11 @@ export default function ContentWithImage(props) {
     //  
     const [ModalShow, setModalShow] = useState(false);
     
+    //
     let {contents} = props;
+
+    //  
+    const tools = new Tools();
     
     return (
         <div className={styles.con}>
@@ -32,7 +36,7 @@ export default function ContentWithImage(props) {
                     content = (typeof content !== 'undefined') 
                         ?   <div className={styles.contentholder}>{
                                 content.map((el,i) => {
-                                    let item = useParseHtml(el);
+                                    let item = tools.parse_html(el);
                                     return (<Fragment key={i}>{item}</Fragment>)
                                 })
                             }</div>

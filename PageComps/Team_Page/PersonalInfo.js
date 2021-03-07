@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import ImageCard from '../../Comps/ImageComps/ImageCard';
 import Modal from '../../Comps/ModalComps/Modal';
-import useParseHtml from '../../hooks/useParseHtml';
+import Tools from '../../GlobalTools/Tools';
 import ContactForm from '../ContactForm/ContactForm';
 import styles from './TeamPage.module.scss'
 
@@ -16,6 +16,9 @@ export default function PersonalInfo(props) {
     //  Modal control
     const ModalControl = () => setModalShowing(!ModalShowing);
 
+    //  
+    const tools = new Tools();
+
     return (
         <>
         <div className={styles.PersonalInfoCon}>
@@ -28,7 +31,7 @@ export default function PersonalInfo(props) {
                     </div>
                     <div className={styles.p_content}>{
                         contents.map((cnt,i) => {
-                            cnt = useParseHtml(cnt)
+                            cnt = tools.parse_html(cnt)
                             return <Fragment key={i}>{cnt}</Fragment>
                         })
                     }</div>

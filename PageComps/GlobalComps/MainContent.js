@@ -1,8 +1,13 @@
 import React, { Fragment } from 'react'
-import useParseHtml from '../../hooks/useParseHtml';
+import Tools from '../../GlobalTools/Tools';
 import styles from './MainContent.module.scss';
 export default function MainContent(props) {
+    //
     let {title, content} = props;
+
+    //
+    const tools = new Tools();
+
     return (
         <div className={styles.con}>
             <div className={styles.titlecon}>
@@ -14,7 +19,7 @@ export default function MainContent(props) {
                 <div className={styles.content}>
                     {
                         content.map((cnt,i) => {
-                            cnt = useParseHtml(cnt);
+                            cnt = tools.parse_html(cnt);
                             return <Fragment key={i}>{cnt}</Fragment>
                         })
                     }

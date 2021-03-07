@@ -1,9 +1,9 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Data from '../Data/Privacy'
 import MainLayout from '../Layout/MainLayout';
-import useParseHtml from '../hooks/useParseHtml';
 import {ContentWrapper} from '../Layout/SectionWrapper'
 import styles from '../PageComps/Privacy_Page/Privacy.module.scss'
+import Tools from '../GlobalTools/Tools';
 export default function privacy() {
     const [PageContent, setPageContent] = useState(null);
 
@@ -17,7 +17,13 @@ export default function privacy() {
 }
 
 function PrivacyContent(props) {
+
+    //
     let {title, pargraphs} = props;
+    
+    // 
+    const tools = new Tools();
+    
     return(
         <div className={styles.con}>
             <div className={styles.header}><h1>{title}</h1></div>
@@ -31,7 +37,7 @@ function PrivacyContent(props) {
                         :   null;
 
                     contents = contents.map((cnt, i) => {
-                        cnt = useParseHtml(cnt);
+                        cnt = tools.parse_html(cnt);
                         return <Fragment key={i}>{cnt}</Fragment>
                     });
 
