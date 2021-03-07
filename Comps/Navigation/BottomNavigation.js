@@ -143,8 +143,6 @@ export default function BottomNavigation() {
 //  
 function CollapseableDrawer({content}) {
 
-    // console.log(content);
-
     //  State
     const [SitemapMenu, setSitemapMenu] = useState(null);
 
@@ -154,14 +152,12 @@ function CollapseableDrawer({content}) {
         setSitemapMenu(new_map);
     }, [])
 
-    //  convert menu
+    //  convert menu by adding showing attribute to the sitemap object
     const convert_menu = (sitemap) => {
-        
-        let coverted = sitemap.map(cnt => {
-            cnt['showing'] = false;
-            return cnt;
+        return sitemap.map( item => {
+            item['showing'] = false;
+            return item;
         })
-        return coverted;
     } 
 
     //  toggle
