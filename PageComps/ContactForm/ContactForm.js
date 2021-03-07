@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import Form from '../../Comps/FormComps/Form'
-import useValidation from '../../hooks/useValidation'
 import FormStyle from './FormStyle.module.scss'
 import Tools from '../../GlobalTools/Tools'
 import styles from './ContactForm.module.scss'
@@ -81,11 +80,15 @@ export default function ContactForm(props) {
 
     //  Submission
     const form_submit = () => {
-        let form = useValidation(FormElement);
+
+        //  Check for the empty fields and assign the has_error to false
+        let form = tool.form_empty_checker(FormElement);
         setFormElement([...form]);
 
+        //  Count the numeber of has_error falses
         let count = false_count(FormElement);
         if(count === 0){
+
             setIsSubmitting(true);
             disable_fields();
 

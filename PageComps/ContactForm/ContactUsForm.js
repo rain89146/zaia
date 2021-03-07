@@ -3,13 +3,12 @@ import Form from '../../Comps/FormComps/Form';
 import Tools from '../../GlobalTools/Tools'
 import MessageAfterSubmit from './MessageAfterSubmit';
 import FormStyle from './ContactFormStyle.module.scss'
-import useValidation from '../../hooks/useValidation';
 import Modal from '../../Comps/ModalComps/Modal';
 
 export default function ContactUsForm() {
 
     //  Global tools
-    let tool = new Tools();
+    const tool = new Tools();
 
     //  Form content
     let Form_content = {
@@ -80,11 +79,15 @@ export default function ContactUsForm() {
 
     //  Submission
     const form_submit = () => {
-        let form = useValidation(FormElement);
+
+        //  Check for the empty fields and assign the has_error to false
+        let form = tool.form_empty_checker(FormElement);
         setFormElement([...form]);
 
+        //  Count the numeber of has_error falses
         let count = false_count(FormElement);
         if(count === 0){
+
             setIsSubmitting(true);
             disable_fields();
 
