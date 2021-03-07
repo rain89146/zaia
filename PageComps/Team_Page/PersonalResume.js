@@ -1,10 +1,17 @@
 import React, { Fragment } from 'react'
 import ImageCard from '../../Comps/ImageComps/ImageCard';
-import useParseHtml from '../../hooks/useParseHtml';
+import Tools from '../../GlobalTools/Tools';
 import styles from './TeamPage.module.scss'
 
 export default function PersonalResume(props) {
+
+    //
     let {image, subtitle, contents} = props;
+
+    //
+    const tools = new Tools();
+
+    //
     return (
         <div className={styles.PersonalResCon}>
             <div className={styles.pr_subtitlecon}>
@@ -21,7 +28,7 @@ export default function PersonalResume(props) {
                     <div className={styles.pr_holder}>
                         {
                             contents.map((cnt,i) => {
-                                cnt = useParseHtml(cnt);
+                                cnt = tools.parse_html(cnt);
                                 return <Fragment key={i}>{cnt}</Fragment>
                             })
                         }
