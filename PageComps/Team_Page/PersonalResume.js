@@ -8,7 +8,7 @@ export default function PersonalResume(props) {
     //
     let {image, subtitle, contents} = props;
 
-    //
+    //  get tools bag
     const tools = new Tools();
 
     //

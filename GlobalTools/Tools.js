@@ -4,7 +4,7 @@ function Tools() {
 
     //  Parse string to html
     const parse_html = (str) => {
-        return <>{parse(str)}</>
+        return <>{ parse(str) }</>
     }
     
     //  Add attr to form component

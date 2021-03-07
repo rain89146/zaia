@@ -7,7 +7,7 @@ export default function PersonalProduction(props) {
     //
     let {subtitle, contents} = props;
 
-    //  
+    //  get tools bag
     const tools = new Tools();
 
     return (

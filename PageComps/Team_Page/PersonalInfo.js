@@ -16,7 +16,7 @@ export default function PersonalInfo(props) {
     //  Modal control
     const ModalControl = () => setModalShowing(!ModalShowing);
 
-    //  
+    //  get tools bag
     const tools = new Tools();
 
     return (
