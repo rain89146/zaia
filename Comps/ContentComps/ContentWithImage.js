@@ -12,10 +12,14 @@ export default function ContentWithImage(props) {
     //
     let {contents} = props;
 
+    //  Modal control
+    const ModalControl = () => setModalShow(!ModalShow);
+
     //  
     const tools = new Tools();
     
     return (
+        <>
         <div className={styles.con}>
             {
                 contents.map((cnt, i) => {
@@ -58,9 +62,6 @@ export default function ContentWithImage(props) {
                             </div>
                         :   null;
 
-                    //  Modal control
-                    const ModalControl = () => setModalShow(!ModalShow);
-
                     //  contact us button
                     let contact_us = <div className={styles.buttoncon}><button onClick={()=>ModalControl()}><div className={styles.text}>contact us</div></button><div className={styles.btnplaceholder}></div></div>
                     
@@ -76,14 +77,15 @@ export default function ContentWithImage(props) {
                             </div>
                             <div className={styles.imagecon}>{image}</div>
                         </div>
-                        <Modal is_open={ModalShow}>
-                            <ContactForm control={ModalControl}/>
-                        </Modal>
                         </>
                     )
                 })
             }
         </div>
+        <Modal is_open={ModalShow}>
+            <ContactForm control={ModalControl}/>
+        </Modal>
+        </>
     )
 }
 
