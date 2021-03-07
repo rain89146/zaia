@@ -12,11 +12,10 @@ export default function projects() {
         setPageContent(Data());
     }, [])
 
-    //  Main content
-    let main = (PageContent !== null) 
-        ?   <SectionOne {...PageContent.project_list}/>
-        :   null;
-
     //  Render
-    return (<MainLayout title={'ZAIA'}>{main}</MainLayout>)
+    return (
+        <MainLayout title={'ZAIA'}>{
+            ( PageContent !== null ) && <SectionOne {...PageContent.project_list}/>
+        }</MainLayout>
+    )
 }

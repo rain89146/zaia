@@ -27,19 +27,16 @@ export default function index() {
         }
     }, [router]);
     
-    //  Main content
-    let main = (PageContent !== null && typeof PageContent !== 'undefined')
-        ?   <>
+    return (
+        <MainLayout title={'ZAIA'}>{
+            ( PageContent !== null && typeof PageContent !== 'undefined') &&
+            <>
                 <SubpageHero {...PageContent.section_0}/>
                 <ContentWithImage {...PageContent.section_1}/>
-                
                 <MarginWrapper top={9}>
                     <RelatedContent {...PageContent.section_2}/>
                 </MarginWrapper>
             </>
-        :   null
-
-    return (
-        <MainLayout title={'ZAIA'}>{main}</MainLayout>
+        }</MainLayout>
     )
 }

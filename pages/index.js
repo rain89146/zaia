@@ -16,14 +16,14 @@ export default function index() {
         setPageContent(Data());
     }, [])
 
-    //  Content
-    let main = (PageContent !== null) 
-        ?   <>
+    //  Render
+    return (
+        <MainLayout title={'ZAIA'}>{
+            (PageContent !== null) &&
+            <>
                 <SectionOne {...PageContent.section_1}/>
                 <SectionTwo {...PageContent.section_2}/>
-            </>
-        :   null
-
-    //  Render
-    return (<MainLayout title={'ZAIA'}>{main}</MainLayout>)
+            </>    
+        }</MainLayout>
+    );
 }

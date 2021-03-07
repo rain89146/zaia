@@ -11,9 +11,13 @@ export default function privacy() {
         setPageContent(Data());
     }, [])
 
-    let main = (PageContent !== null) && <PrivacyContent {...PageContent}/>
-
-    return (<MainLayout title={'ZAIA Privacy'}><ContentWrapper>{main}</ContentWrapper></MainLayout>);
+    return (
+        <MainLayout title={'ZAIA Privacy'}>
+            <ContentWrapper>{
+                (PageContent !== null) && <PrivacyContent {...PageContent}/>
+            }</ContentWrapper>
+        </MainLayout>
+    );
 }
 
 function PrivacyContent(props) {

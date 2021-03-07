@@ -28,10 +28,12 @@ export default function index() {
             setPageContent(content);
         }
     }, [router]);
-
-    //  Main content
-    let main = (PageContent !== null && typeof PageContent !== 'undefined')
-        ?   <>
+    
+    //  Render
+    return (
+        <MainLayout title={'ZAIA'}>{
+            (PageContent !== null && typeof PageContent !== 'undefined') &&   
+            <>
                 <LandscapeImageBanner {...PageContent.section_0.image}/>
                 <ContentWithImageTitle {...PageContent.section_1}/>
                 <ContentGridGallery {...PageContent.section_2}/>
@@ -39,8 +41,6 @@ export default function index() {
                     <RelatedContent {...PageContent.section_3}/>
                 </MarginWrapper>
             </>
-        :   null;
-    
-    //  Render
-    return (<MainLayout title={'ZAIA'}>{main}</MainLayout>)
+        }</MainLayout>
+    );
 }
