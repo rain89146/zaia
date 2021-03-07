@@ -42,9 +42,34 @@
     }
 
     .m_diaglogBack{
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+
         .m_dialogBody{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+
             .m_dialogCon{
-                
+                z-index: 2000;
+                position: relative;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                margin: auto;
+                max-width: none;
+                width: 100%;
+                background-color: #1C2022;
+                box-shadow: none;
+                box-sizing: border-box;
+                overflow-y: auto;
+
+                section{
+                    clear: both;
+                }
             }
         }
     }
