@@ -40,23 +40,23 @@ export default function MainLayout(props) {
 
     //  modal control
     const closeModal = () => {
-        setCookieShow(prev=> {
-            return {
-                ...prev, 
-                modal_viewed: true
-            }
-        })
+        setCookieShow(false);
+        let obj_str = JSON.stringify({
+            ...ZaiaObj, 
+            modal_viewed: true
+        });
+        Cookies.set('zaia', obj_str);
     }
 
     //  Accept cookie
     const acceptCookie = () => {
-        setCookieShow(prev=> {
-            return {
-                ...prev,
-                modal_viewed: true,
-                cookie_accepted: true
-            }
-        })
+        setCookieShow(false);
+        let obj_str = JSON.stringify({
+            ...ZaiaObj,
+            modal_viewed: true,
+            cookie_accepted: true
+        });
+        Cookies.set('zaia', obj_str);
     }
 
     //  Render
@@ -67,7 +67,7 @@ export default function MainLayout(props) {
             <div className={styles.body}>{props.children}</div>    
             <BottomNavigation />
             {
-                (CookieShow) && <CookieModal {...ZaiaObj} close={closeModal} accept={acceptCookie} status={CookieShow}/>
+                (CookieShow) && <CookieModal {...ZaiaObj} close={closeModal} accept={acceptCookie} showing={CookieShow}/>
             }
         </Fragment>
     )
