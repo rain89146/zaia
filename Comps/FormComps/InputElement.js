@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import useInputValidation from '../../hooks/useInputValidation';
 import Tools from '../../GlobalTools/Tools';
 
 export default function InputElement(props) {
