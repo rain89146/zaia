@@ -11,7 +11,7 @@ export default function ContactUsForm() {
     const tool = new Tools();
 
     //  Form content
-    let Form_content = {
+    const Form_content = {
         type: 'form',
         btntext: 'Send',
         content: [
@@ -73,7 +73,7 @@ export default function ContactUsForm() {
 
     //  Update form content
     useEffect(() => {
-        let converted_form = tool.form_conversion(Form_content.content);
+        const converted_form = tool.form_conversion(Form_content.content);
         setFormElement(converted_form);
     }, []);
 
@@ -81,11 +81,11 @@ export default function ContactUsForm() {
     const form_submit = () => {
 
         //  Check for the empty fields and assign the has_error to false
-        let form = tool.form_empty_checker(FormElement);
+        const form = tool.form_empty_checker(FormElement);
         setFormElement([...form]);
 
         //  Count the numeber of has_error falses
-        let count = false_count(FormElement);
+        const count = false_count(FormElement);
         if(count === 0){
 
             setIsSubmitting(true);
@@ -164,7 +164,7 @@ export default function ContactUsForm() {
         :   <button disabled>Sending...</button>
 
     //  Form content
-    let content = <Form 
+    const content = <Form 
         formStyles={FormStyle}
         formContent={FormElement}
         valueUpdate={value_update}

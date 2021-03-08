@@ -9,7 +9,7 @@ export default function TopNavigation() {
     const [ModalShowing, setModalShowing] = useState(false);
 
     //  Navigation
-    let nav_context = [
+    const nav_context = [
         {
             title: 'Home',
             url: '/'
@@ -50,7 +50,7 @@ export default function TopNavigation() {
     ];
 
     //  Site logo
-    let logobkg = {backgroundImage: `url('https://res.cloudinary.com/dgqsldchb/image/upload/v1614997761/zaia/logos/logo_gro8on.png')`}
+    const logobkg = {backgroundImage: `url('https://res.cloudinary.com/dgqsldchb/image/upload/v1614997761/zaia/logos/logo_gro8on.png')`}
 
     //  Modal control
     const ModalControl = () => setModalShowing(!ModalShowing);
@@ -64,9 +64,7 @@ export default function TopNavigation() {
                         <ul>
                             {
                                 nav_context.map((nav,i) => {
-                                    let {submenu} = nav;
-
-                                    let menu_item = (typeof submenu !== 'undefined')
+                                    let menu_item = (typeof nav.submenu !== 'undefined')
                                         ?   <SubMenuTab {...nav}/>
                                         :   <MainMenuTab {...nav}/>
 
@@ -109,19 +107,17 @@ export default function TopNavigation() {
 
 //  Sub menu tab
 function SubMenuTab(props) {
-    let {title, submenu} = props;
     return (
         <>
-        <div className={styles.menutab}><h5 title={title}>{title}</h5></div>
+        <div className={styles.menutab}><h5 title={props.title}>{props.title}</h5></div>
         <div className={styles.submenu}>
             <div className={styles.submenucon}>
                 <ul>
                 {
-                    submenu.map((sb, i) => {
-                        let {title, url} = sb;
+                    props.submenu.map((sb, i) => {
                         return (
                             <li key={i}>
-                                <Link href={url}><a title={title}>{title}</a></Link>
+                                <Link href={sb.url}><a title={sb.title}>{sb.title}</a></Link>
                             </li>
                         )
                     })
@@ -135,10 +131,5 @@ function SubMenuTab(props) {
 
 //  Main menu tab
 function MainMenuTab(props) {
-    let {title, url} = props;
-    return(
-        <>
-        <div className={styles.menutab}><Link href={url}><a title={title}>{title}</a></Link></div>
-        </>
-    )
+    return(<div className={styles.menutab}><Link href={props.url}><a title={props.title}>{props.title}</a></Link></div>)
 }

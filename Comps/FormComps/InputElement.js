@@ -7,10 +7,10 @@ export default function InputElement(props) {
     const tools = new Tools();
 
     //  Get all values from props
-    let {label, element_type, name, max, placeholder, datatype, datatype_error, error, required, has_error, value, styles} = props;
+    const {label, element_type, name, max, placeholder, datatype, datatype_error, error, required, has_error, value, styles} = props;
 
     //  update to the parent
-    let {valueUpdate, errorUpdate, disable, index} = props;
+    const {valueUpdate, errorUpdate, disable, index} = props;
 
     //  Set the state
     const [InputValue, setInputValue] = useState(value);
@@ -30,10 +30,11 @@ export default function InputElement(props) {
 
     //  On blur
     const inputOnBlur = (e) => {
-        let {value} = e.target; 
+        const {value} = e.target; 
         if(value !== ''){
-            let validation_result = tools.input_validation(value, datatype, datatype_error);
-            let {result, message} = validation_result;
+
+            const validation_result = tools.input_validation(value, datatype, datatype_error);
+            const {result, message} = validation_result;
 
             if(result === false){
                 setInputError(message);

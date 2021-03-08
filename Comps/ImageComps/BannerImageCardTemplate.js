@@ -6,8 +6,11 @@ import ImageCard from './ImageCard';
 import Link from 'next/link';
 
 export default function BannerImageCardTemplate(props) {
-    let {image, position} = props;
 
+    //
+    const {image, position} = props;
+
+    //
     let layout = (position === 'left')
         ?   <ContentLeft
                 content={
@@ -20,6 +23,7 @@ export default function BannerImageCardTemplate(props) {
                 }
             />
 
+    //
     let backdrop = (position === 'left')
         ?   <div className={styles.leftbackdrop}></div>
         :   <div className={styles.rightbackdrop}></div>

@@ -3,10 +3,7 @@ import ImageCard from '../../Comps/ImageComps/ImageCard';
 import Tools from '../../GlobalTools/Tools';
 import styles from './TeamPage.module.scss'
 
-export default function PersonalResume(props) {
-
-    //
-    let {image, subtitle, contents} = props;
+export default function PersonalResume({image, subtitle, contents}) {
 
     //  get tools bag
     const tools = new Tools();

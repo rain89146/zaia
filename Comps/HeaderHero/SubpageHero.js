@@ -2,7 +2,7 @@ import React from 'react'
 import ImageCard from '../ImageComps/ImageCard';
 import styles from './SubpageHero.module.scss'
 export default function SubpageHero(props) {
-    let {image, text} = props;
+    const {image, text} = props;
     return (
         <div className={styles.con}>
             <div className={styles.holder}>

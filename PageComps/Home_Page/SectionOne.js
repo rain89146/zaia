@@ -3,8 +3,14 @@ import LandScapeImageCardTemplate from '../../Comps/ImageComps/LandScapeImageCar
 import ScrolldownIcon from '../../Svgs/Home_Page/SvgIcon0';
 import styles from './HomePage.module.scss'
 export default function SectionOne(props) {
-    let {text, logo} = props;
-    let logobk = {backgroundImage: `url('${logo}')`};
+
+    //
+    const {text, logo} = props;
+    
+    //
+    const logobk = {backgroundImage: `url('${logo}')`};
+    
+    //
     return (
         <div>
             <LandScapeImageCardTemplate {...props}>

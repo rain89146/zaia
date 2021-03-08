@@ -30,7 +30,7 @@ export default function ContentWithImageTitle(props) {
     const ModalControl = () => setModalShow(!ModalShow);
 
     //  button con
-    let buttoncon = <div className={styles.button}><button onClick={()=>ModalControl()}><div className={styles.text}>contact us</div></button></div>
+    const buttoncon = <div className={styles.button}><button onClick={()=>ModalControl()}><div className={styles.text}>contact us</div></button></div>
 
     return (
         <>

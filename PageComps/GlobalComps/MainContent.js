@@ -2,8 +2,9 @@ import React, { Fragment } from 'react'
 import Tools from '../../GlobalTools/Tools';
 import styles from './MainContent.module.scss';
 export default function MainContent(props) {
+    
     //
-    let {title, content} = props;
+    const {title, content} = props;
 
     //
     const tools = new Tools();
@@ -19,8 +20,7 @@ export default function MainContent(props) {
                 <div className={styles.content}>
                     {
                         content.map((cnt,i) => {
-                            cnt = tools.parse_html(cnt);
-                            return <Fragment key={i}>{cnt}</Fragment>
+                            return <Fragment key={i}>{tools.parse_html(cnt)}</Fragment>
                         })
                     }
                 </div>

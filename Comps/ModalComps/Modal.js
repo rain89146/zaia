@@ -19,11 +19,11 @@ export default function Modal(props) {
     return ( is_mini === undefined) ? <RegularModal {...props} viewclass={view_class}/> : <MiniModal {...props} viewclass={view_class}/>
 }
 
+//  Regular full size modal
 function RegularModal(props) {
-    let {viewclass} = props;
     return (
         <>
-        <div className={viewclass}>
+        <div className={props.viewclass}>
             <div className={styles.diaglogBack}>
                 <div className={styles.dialogBody}>
                     <div className={styles.dialogCon}>
@@ -36,11 +36,11 @@ function RegularModal(props) {
     )
 }
 
+//  Cookie small modal
 function MiniModal(props) {
-    let {viewclass} = props;
     return (
         <>
-        <div className={viewclass}>
+        <div className={props.viewclass}>
             <div className={styles.m_diaglogBack}>
                 <div className={styles.m_dialogBody}>
                     <div className={styles.m_dialogCon}>

@@ -11,7 +11,7 @@ export default function PersonalInfo(props) {
     const [ModalShowing, setModalShowing] = useState(false);
 
     //  
-    let {title, subtitle, image, contents} = props;
+    const {title, subtitle, image, contents} = props;
 
     //  Modal control
     const ModalControl = () => setModalShowing(!ModalShowing);

@@ -4,6 +4,7 @@ import styles from './ContentGridGallery.module.scss'
 export default function ContentGridGallery(props) {
     let {images} = props;
 
+    //  Convert images to valid data structure
     images = grid_layout_mixer(images);
 
     return (
@@ -11,14 +12,14 @@ export default function ContentGridGallery(props) {
             {
                 images.map((img,i) => {
 
-                    let girdstyle = {
+                    const gird_style = {
                         display: 'grid',
                         gridArea: `${i+1} / 1 / auto / auto`
                     }
 
                     if(img.length == 2){
                         return (
-                            <div key={i} style={girdstyle}>
+                            <div key={i} style={gird_style}>
                                 <div className={styles.gridholder}>
                                     {
                                         img.map((image,i) => {
@@ -36,7 +37,7 @@ export default function ContentGridGallery(props) {
                         )
                     }else{
                         return (
-                            <div key={i} style={girdstyle}>
+                            <div key={i} style={gird_style}>
                                 <div className={styles.gridrow}>
                                     <div className={styles.imagecon}>
                                         <ImageCard src={img[0]} />
@@ -51,12 +52,12 @@ export default function ContentGridGallery(props) {
     )
 }
 
+//  Convert flat array into group array
 function grid_layout_mixer(sets){
-
-    let total = sets.length, res = [];
+    const total = sets.length, res = [];
     for(let i = 0; i<total; i++){
         if( i%4 != 3 ){
-            let tem = [sets[i]];
+            const tem = [sets[i]];
             if( i%4 == 2 && (total > (i+1))){
                 tem.push(sets[i+1]);
             }

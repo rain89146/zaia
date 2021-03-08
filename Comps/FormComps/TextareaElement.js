@@ -2,10 +2,10 @@ import React, {useState, useRef} from 'react'
 export default function TextareaElement(props) {
 
     //  Get all values from props
-    let {label, name, placeholder, max, error, required, disable, has_error, value, styles} = props;
+    const {label, name, placeholder, max, error, required, disable, has_error, value, styles} = props;
 
     //  update to the parent
-    let {valueUpdate, errorUpdate, index} = props;
+    const {valueUpdate, errorUpdate, index} = props;
 
     //  Set the state
     const [TextareaValue, setTextareaValue] = useState('');
@@ -27,7 +27,7 @@ export default function TextareaElement(props) {
     
     //  on blur
     const textareaOnBlur = (e) => {
-        let {value} = e.target;
+        const {value} = e.target;
         if(required){
             if(value === ''){
                 setTextareaError(error)
@@ -40,7 +40,7 @@ export default function TextareaElement(props) {
 
     //  on change
     const textareaOnChange = (e) => {
-        let {value} = e.target;
+        const {value} = e.target;
         setTextareaValue(value);
         valueUpdate(value, index);
     }

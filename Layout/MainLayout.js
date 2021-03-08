@@ -14,7 +14,7 @@ export default function MainLayout(props) {
 
     //  When mount
     useEffect(() => {
-        let zaia_data = Cookies.get('zaia');
+        const zaia_data = Cookies.get('zaia');
         let obj = {};
         if(typeof zaia_data === 'undefined'){
             obj = {
@@ -41,22 +41,20 @@ export default function MainLayout(props) {
     //  modal control
     const closeModal = () => {
         setCookieShow(false);
-        let obj_str = JSON.stringify({
+        Cookies.set('zaia', JSON.stringify({
             ...ZaiaObj, 
             modal_viewed: true
-        });
-        Cookies.set('zaia', obj_str);
+        }));
     }
 
     //  Accept cookie
     const acceptCookie = () => {
         setCookieShow(false);
-        let obj_str = JSON.stringify({
+        Cookies.set('zaia', JSON.stringify({
             ...ZaiaObj,
             modal_viewed: true,
             cookie_accepted: true
-        });
-        Cookies.set('zaia', obj_str);
+        }));
     }
 
     //  Render

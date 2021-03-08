@@ -2,7 +2,7 @@ import styles from './ContactForm.module.scss'
 
 //  Message after sumbition
 export default function MessageAfterSubmit(props) {
-    let {status, success, failed} = props;
+    const {status, success, failed} = props;
     switch (status) {
         case true:
             return (

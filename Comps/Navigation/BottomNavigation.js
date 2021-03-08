@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 export default function BottomNavigation() {
 
-    let date = new Date();
-    let year = date.getFullYear();
+    const date = new Date();
+    const year = date.getFullYear();
     
     //  Page content
     let page_content = {
@@ -88,7 +88,7 @@ export default function BottomNavigation() {
 
                 <div className={styles.sitemap}>{
                     page_content.sitemap.map((st,i) => {
-                        let {title, list} = st;
+                        const {title, list} = st;
                         return (
                             <div className={styles.sitecol} key={i}>
                                 <div className={styles.title}>{title}</div>
@@ -96,7 +96,7 @@ export default function BottomNavigation() {
                                     <ul>
                                         {
                                             list.map((ls,i) => {
-                                                let {text, url} = ls;
+                                                const {text, url} = ls;
                                                 return (
                                                     <li key={i}>
                                                         <Link href={url}>
@@ -140,7 +140,7 @@ export default function BottomNavigation() {
     )
 }
 
-//  
+//  Collapseable drawer unit
 function CollapseableDrawer({content}) {
 
     //  State
@@ -173,7 +173,7 @@ function CollapseableDrawer({content}) {
                 {
                     (SitemapMenu !== null) && SitemapMenu.map((sm, i) => {
 
-                        let {title, list, showing} = sm;
+                        const {title, list, showing} = sm;
 
                         //  drawer icon
                         let icon = (showing)

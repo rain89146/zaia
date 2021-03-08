@@ -2,7 +2,7 @@ import Head from 'next/head';
 export default function Header(props) {
 
     //  SEOs are here
-    let {title} = props;
+    const {title} = props;
     return (
         <Head>
             <title>{title}</title>

@@ -27,9 +27,7 @@ export default function Form(props) {
             {title}
             <div className={styles.formcon}>{
                 (formContent !== null ) && formContent.map((cnts,i) => {
-                    let {type} = cnts;
-
-                    switch(type) {
+                    switch(cnts.type) {
                         case 'input':
                             return (
                                 <div className={styles.formelement} key={i}>

@@ -17,11 +17,13 @@ export default function team() {
     //  On mount
     useEffect(() => {
         setPageContent(Data());
-    }, [])
+    }, []);
 
-    //  main content
-    let main = (PageContent !== null)
-        ?   <>
+    //  Render
+    return (
+        <MainLayout title={'ZAIA'}>{
+            (PageContent !== null) &&   
+            <>
                 <LandscapeImageBanner {...PageContent.section_0.image} />
                 <SectionWrapper top={6}>
                     <PersonalInfo {...PageContent.section_1}/>
@@ -34,8 +36,6 @@ export default function team() {
                 </SectionWrapper>
                 <SectionSix {...PageContent.section_4}/>
             </>
-        :   null
-    
-    //  Render
-    return (<MainLayout title={'ZAIA'}>{main}</MainLayout>)
+        }</MainLayout>
+    )
 }

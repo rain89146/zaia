@@ -8,10 +8,10 @@ import MessageAfterSubmit from './MessageAfterSubmit'
 export default function ContactForm(props) {
 
     //  Global tools
-    let tool = new Tools();
+    const tool = new Tools();
 
     //  Form content
-    let Form_content = {
+    const Form_content = {
         type: 'form',
         btntext: 'Send',
         content: [
@@ -64,7 +64,7 @@ export default function ContactForm(props) {
     }
 
     //  Close control
-    let {control} = props;
+    const {control} = props;
 
     //  set the form content state
     const [FormElement, setFormElement] =   useState(null);
@@ -74,7 +74,7 @@ export default function ContactForm(props) {
 
     //  Update form content
     useEffect(() => {
-        let converted_form = tool.form_conversion(Form_content.content);
+        const converted_form = tool.form_conversion(Form_content.content);
         setFormElement(converted_form);
     }, []);
 
@@ -82,11 +82,11 @@ export default function ContactForm(props) {
     const form_submit = () => {
 
         //  Check for the empty fields and assign the has_error to false
-        let form = tool.form_empty_checker(FormElement);
+        const form = tool.form_empty_checker(FormElement);
         setFormElement([...form]);
 
         //  Count the numeber of has_error falses
-        let count = false_count(FormElement);
+        const count = false_count(FormElement);
         if(count === 0){
 
             setIsSubmitting(true);

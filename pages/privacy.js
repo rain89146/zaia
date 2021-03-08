@@ -20,10 +20,7 @@ export default function privacy() {
     );
 }
 
-function PrivacyContent(props) {
-
-    //
-    let {title, pargraphs} = props;
+function PrivacyContent({title, pargraphs}) {
     
     // 
     const tools = new Tools();
@@ -41,8 +38,7 @@ function PrivacyContent(props) {
                         :   null;
 
                     contents = contents.map((cnt, i) => {
-                        cnt = tools.parse_html(cnt);
-                        return <Fragment key={i}>{cnt}</Fragment>
+                        return <Fragment key={i}>{tools.parse_html(cnt)}</Fragment>
                     });
 
                     return (

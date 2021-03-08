@@ -1,5 +1,5 @@
 export default function Services() {
-    let remodeling = {
+    const remodeling = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008428/zaia/remodeling/banner_oa65my.jpg',
@@ -72,7 +72,7 @@ export default function Services() {
         }
     }
 
-    let design = {
+    const design = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008036/zaia/design/banner_mby7pz.jpg',
@@ -145,7 +145,7 @@ export default function Services() {
         }
     }
 
-    let construction = {
+    const construction = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007937/zaia/construction/banner_yhnxwz.jpg',
@@ -208,7 +208,7 @@ export default function Services() {
     }
 
     //  Remodeling
-    let bathroom = {
+    const bathroom = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008427/zaia/remodeling/bathroom_himof6.jpg',
@@ -292,7 +292,7 @@ export default function Services() {
         }
     }
 
-    let kitchen = {
+    const kitchen = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008427/zaia/remodeling/kitchen_jimvyu.jpg',
@@ -390,7 +390,7 @@ export default function Services() {
         }
     }
 
-    let living = {
+    const living = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008427/zaia/remodeling/living_wmkfzq.jpg',
@@ -487,7 +487,7 @@ export default function Services() {
     }
 
     //  Design
-    let interiordesign = {
+    const interiordesign = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008035/zaia/design/interior_design_nimbfw.jpg',
@@ -585,7 +585,7 @@ export default function Services() {
         }
     }
 
-    let furnituredesign = {
+    const furnituredesign = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008035/zaia/design/furniture_design_zwye41.jpg',
@@ -682,7 +682,7 @@ export default function Services() {
         }
     }
 
-    let smarthome = {
+    const smarthome = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008033/zaia/design/smarthome_lzjmoh.jpg',
@@ -716,7 +716,7 @@ export default function Services() {
                             title: '让你的房屋学会思考。'
                         },
                         {
-                            src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008049/zaia/design/smarthome/digital-tablet-screen-with-smart-home-controller-on-wooden-table_1_aunpxf.jpg',
+                            src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008049/zaia/design/smarthome/digital-tabconst-screen-with-smart-home-controller-on-wooden-table_1_aunpxf.jpg',
                             title: '让你的房屋学会思考。'
                         }
                     ]
@@ -779,7 +779,7 @@ export default function Services() {
     }
 
     //  Construct
-    let aud = {
+    const aud = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007936/zaia/construction/ADU_fa20be.jpg',
@@ -874,7 +874,7 @@ export default function Services() {
         }
     }
 
-    let NewConstruction = {
+    const NewConstruction = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007936/zaia/construction/NewConstruction_gwgeb6.jpg',

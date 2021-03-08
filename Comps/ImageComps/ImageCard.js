@@ -3,17 +3,22 @@ import React from 'react'
 import styles from './ImageCard.module.scss'
 
 export default function ImageCard(props) {
+
+    //
     let {src, height, title, width} = props;
 
+    //  Assign height
     height = (typeof height !== 'undefined') 
         ?   `${height}px`
         :   '100%';
 
+    //  Assign witdh
     width = (typeof width !== 'undefined')
         ?   `${width}px`
         :   '100%';
 
-    let image_style = {width, height, position: 'relative'}
+    //  generate style
+    const image_style = {width, height, position: 'relative'}
 
     return (
         <div className={styles.imagecon} style={image_style}>

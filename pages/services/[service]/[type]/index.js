@@ -21,8 +21,8 @@ export default function index() {
     //  Router update
     useEffect(() => {
         if(typeof service !== 'undefined' && typeof type !== 'undefined'){
-            let data = Data();
-            let content = data[service][type];
+            const data = Data();
+            const content = data[service][type];
             setPageContent(content);
         }
     }, [router]);

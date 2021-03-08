@@ -3,7 +3,7 @@ import styles from './MobileMenu.module.scss';
 import Link from 'next/link';
 
 export default function MobileMenu(props) {
-    let {control, content} = props;
+    const {control, content} = props;
 
     //  Menu state
     const [MenuState, setMenuState] = useState(null);
@@ -24,7 +24,7 @@ export default function MobileMenu(props) {
     //  Convert menu
     const convert_menu = (content) => {
         return content.map((mn, i) => {
-            let {submenu} = mn;
+            const {submenu} = mn;
             if(typeof submenu !== 'undefined'){
                 mn['showing'] = false;
                 return mn;
@@ -81,8 +81,7 @@ function SubMenuTab(props) {
         :   <div className={styles.submenuholder}>
                 {
                     submenu.map((sb,i)=> {
-                        let {title, url} = sb;
-                        return (<div className={styles.submenutab} key={i}><Link href={url}><a>{title}</a></Link></div>)
+                        return (<div className={styles.submenutab} key={i}><Link href={sb.url}><a>{sb.title}</a></Link></div>)
                     })
                 }
             </div>
@@ -101,8 +100,7 @@ function SubMenuTab(props) {
 
 //  Main menu tab
 function MainMenuTab(props) {
-    let {title, url} = props;
-    return (<div className={styles.menu_tab}><Link href={url}><a>{title}</a></Link></div>)
+    return (<div className={styles.menu_tab}><Link href={props.url}><a>{props.title}</a></Link></div>)
 }
 
 

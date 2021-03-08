@@ -2,10 +2,7 @@ import React, { Fragment } from 'react'
 import Tools from '../../GlobalTools/Tools';
 import styles from './TeamPage.module.scss'
 
-export default function PersonalProduction(props) {
-
-    //
-    let {subtitle, contents} = props;
+export default function PersonalProduction({subtitle, contents}) {
 
     //  get tools bag
     const tools = new Tools();

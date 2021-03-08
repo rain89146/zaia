@@ -1,6 +1,6 @@
 export default function Projects() {
 
-    let project_list = {
+    const project_list = {
         contents: [
             {
                 image: {
@@ -70,7 +70,7 @@ export default function Projects() {
         ]
     }
 
-    let project1 = {
+    const project1 = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project1_ahjh4x.jpg',
@@ -126,7 +126,7 @@ export default function Projects() {
         }
     }
 
-    let project2 = {
+    const project2 = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
@@ -196,7 +196,7 @@ export default function Projects() {
         }
     }
 
-    let project3 = {
+    const project3 = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008139/zaia/projects/project2_yvn66j.jpg',
@@ -251,7 +251,7 @@ export default function Projects() {
         }
     }
 
-    let project4 = {
+    const project4 = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008135/zaia/projects/project3_j9pvrk.jpg',
@@ -310,7 +310,7 @@ export default function Projects() {
         }
     }
 
-    let project5 = {
+    const project5 = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008139/zaia/projects/project4_coujpt.jpg',
@@ -366,7 +366,7 @@ export default function Projects() {
         }
     }
 
-    let project6 = {
+    const project6 = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008139/zaia/projects/project8_zc1fes.jpg',
@@ -417,7 +417,7 @@ export default function Projects() {
         }
     }
 
-    let project7 = {
+    const project7 = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
@@ -468,7 +468,7 @@ export default function Projects() {
         }
     }
 
-    let project8 = {
+    const project8 = {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',

@@ -9,8 +9,7 @@ function Tools() {
     
     //  Add attr to form component
     const form_conversion = (form) => {
-
-        let arr = [];
+        const arr = [];
         form.forEach(element => {
             element['disable'] = false;
             element['value']='';
@@ -53,22 +52,22 @@ function Tools() {
 
     //  Valiadate name
     const name_validation = (value, datatype_error) => {
-        let reg = /^[\u00C0-\u017Fa-zA-Z'’‘’][\u00C0-\u017Fa-zA-Z’‘’' -]+[\u00C0-\u017Fa-zA-Z'’‘’]?$/;
-        let res = reg.test(value);
+        const reg = /^[\u00C0-\u017Fa-zA-Z'’‘’][\u00C0-\u017Fa-zA-Z’‘’' -]+[\u00C0-\u017Fa-zA-Z'’‘’]?$/;
+        const res = reg.test(value);
         return (res) ? {result: true} : {result: false, message: datatype_error}
     }
 
     //  Validate phone
     const phone_validation = (value, datatype_error) => {
-        let reg = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
-        let res = reg.test(value);
+        const reg = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
+        const res = reg.test(value);
         return (res) ? {result: true} : {result: false, message: datatype_error}
     }
 
     //  Validate email
     const email_validation = (value, datatype_error) => {
-        let reg = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        let res = reg.test(value);
+        const reg = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        const res = reg.test(value);
         return (res) ? {result: true} : {result: false, message: datatype_error}
     }
 
