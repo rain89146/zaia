@@ -10,7 +10,7 @@ export default function ContentWithImage(props) {
     const [ModalShow, setModalShow] = useState(false);
     
     //
-    let {contents} = props;
+    const {contents} = props;
 
     //  Modal control
     const ModalControl = () => setModalShow(!ModalShow);
@@ -40,8 +40,11 @@ export default function ContentWithImage(props) {
                     content = (typeof content !== 'undefined') 
                         ?   <div className={styles.contentholder}>{
                                 content.map((el,i) => {
-                                    let item = tools.parse_html(el);
-                                    return (<Fragment key={i}>{item}</Fragment>)
+                                    return (
+                                        <Fragment key={i}>{
+                                            tools.parse_html(el)
+                                        }</Fragment>
+                                    )
                                 })
                             }</div>
                         :   null;
@@ -63,7 +66,7 @@ export default function ContentWithImage(props) {
                         :   null;
 
                     //  contact us button
-                    let contact_us = <div className={styles.buttoncon}><button onClick={()=>ModalControl()}><div className={styles.text}>contact us</div></button><div className={styles.btnplaceholder}></div></div>
+                    const contact_us = <div className={styles.buttoncon}><button onClick={()=>ModalControl()}><div className={styles.text}>contact us</div></button><div className={styles.btnplaceholder}></div></div>
                     
                     return (
                         <>
@@ -91,17 +94,20 @@ export default function ContentWithImage(props) {
 
 //  Content image card
 function ContentImageCard(props) {
-    let {src, title} = props;
 
+    //
+    const {src, title} = props;
+
+    //
     const [ImageWidth, setImageWidth] = useState(0);
     const [ImageHeight, setImageHeight] = useState(0);
 
     //  When image load
     const ImageOnLoad = ({target:img}) => {
 
-        let viewport_width = img.offsetWidth;
-        let image_width = img.naturalWidth;
-        let ratio = viewport_width / image_width;
+        const viewport_width = img.offsetWidth;
+        const image_width = img.naturalWidth;
+        const ratio = viewport_width / image_width;
 
         setImageHeight(img.naturalHeight * ratio);
         setImageWidth(viewport_width);
