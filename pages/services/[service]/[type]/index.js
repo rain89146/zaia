@@ -29,7 +29,6 @@ export default function index() {
     
     return (
         <MainLayout title={'ZAIA'}>{
-            // ( PageContent !== null && typeof PageContent !== 'undefined') &&
             (!!PageContent) &&
             <>
                 <SubpageHero {...PageContent.section_0}/>
