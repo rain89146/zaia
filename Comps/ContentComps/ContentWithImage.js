@@ -110,7 +110,9 @@ function ContentImageCard(props) {
     }
 
     //  Set image style
-    let image_style = (ImageWidth !== 0 ) && {width: ImageWidth, height: ImageHeight, position: 'relative'}
+    let image_style = (ImageWidth !== 0 ) 
+        ?   {width: ImageWidth, height: ImageHeight, position: 'relative'}
+        :   null;
 
     return (
         <div className={styles.ContentImageCard} style={image_style}>
