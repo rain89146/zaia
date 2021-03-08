@@ -25,7 +25,7 @@ export default function MobileMenu(props) {
     const convert_menu = (content) => {
         return content.map((mn, i) => {
             const {submenu} = mn;
-            if(typeof submenu !== 'undefined'){
+            if(!!submenu){
                 mn['showing'] = false;
                 return mn;
             }
@@ -52,7 +52,7 @@ export default function MobileMenu(props) {
                         {
                             (MenuState !== null) && MenuState.map((ms,i)=>{
 
-                                let menu_tab = (typeof ms.submenu !== 'undefined')
+                                let menu_tab = (!!ms.submenu)
                                     ?   <SubMenuTab {...ms} toggle={menu_toggle} index={i}/>
                                     :   <MainMenuTab {...ms}/>
 

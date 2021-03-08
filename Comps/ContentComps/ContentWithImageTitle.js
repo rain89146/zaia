@@ -15,17 +15,6 @@ export default function ContentWithImageTitle(props) {
     //  
     const tools = new Tools();
 
-    //  Contents
-    contents = (typeof contents !== 'undefined')
-        ?   <div className={styles.content}>
-            {
-                contents.map((cnt,i) => {
-                    return <Fragment key={i}>{tools.parse_html(cnt)}</Fragment>
-                })
-            }
-            </div>
-        :   null;
-
     //  Modal control
     const ModalControl = () => setModalShow(!ModalShow);
 
@@ -40,7 +29,16 @@ export default function ContentWithImageTitle(props) {
                 <div className={styles.holder}>
                     <div className={styles.contentholder}>
                         <div className={styles.deco}></div>
-                        {contents}
+                        {
+                            (!!contents) &&  
+                            <div className={styles.content}>
+                            {
+                                contents.map((cnt,i) => {
+                                    return <Fragment key={i}>{tools.parse_html(cnt)}</Fragment>
+                                })
+                            }
+                            </div>
+                        }
                         {buttoncon}
                     </div>
                     <div className={styles.placeholder}></div>

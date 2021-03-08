@@ -21,7 +21,7 @@ export default function index() {
 
     //  Router update
     useEffect(() => {
-        if(service !== null && typeof service !== 'undefined') {
+        if(!!service) {
             let data = Data();
             let content = data[service][service];
             setPageContent(content);
@@ -31,7 +31,7 @@ export default function index() {
     //  Render
     return (
         <MainLayout title={'ZAIA'}>{
-            ( PageContent !== null && typeof PageContent !== 'undefined' ) &&
+            ( !!PageContent ) &&
             <>
                 <SubpageHero {...PageContent.section_0} />
                 <SectionOne {...PageContent.section_1} />

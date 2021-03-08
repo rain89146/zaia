@@ -8,12 +8,12 @@ export default function ImageCard(props) {
     let {src, height, title, width} = props;
 
     //  Assign height
-    height = (typeof height !== 'undefined') 
+    height = (!!height) 
         ?   `${height}px`
         :   '100%';
 
     //  Assign witdh
-    width = (typeof width !== 'undefined')
+    width = (!!width)
         ?   `${width}px`
         :   '100%';
 

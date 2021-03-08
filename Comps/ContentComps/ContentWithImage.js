@@ -27,43 +27,39 @@ export default function ContentWithImage(props) {
                     let content = cnt.contents;
 
                     //  Main title
-                    title = (typeof title !== 'undefined' && title !== '') 
-                        ?   <div className={styles.maintitle}><h1>{title}</h1></div>
-                        :   null;
+                    title = (!! title ) && <div className={styles.maintitle}><h1>{title}</h1></div>;
 
                     //  Subtitle
-                    subtitle = (typeof subtitle !== 'undefined' && subtitle !== '')
-                        ?   <div className={styles.subtitle}><h5>{subtitle}</h5></div>
-                        :   null;
+                    subtitle = (!!subtitle) && <div className={styles.subtitle}><h5>{subtitle}</h5></div>;
 
                     //  Content list
-                    content = (typeof content !== 'undefined') 
-                        ?   <div className={styles.contentholder}>{
-                                content.map((el,i) => {
-                                    return (
-                                        <Fragment key={i}>{
-                                            tools.parse_html(el)
-                                        }</Fragment>
-                                    )
-                                })
-                            }</div>
-                        :   null;
+                    content = (!!content) && (
+                        <div className={styles.contentholder}>{
+                            content.map((el,i) => {
+                                return (
+                                    <Fragment key={i}>{
+                                        tools.parse_html(el)
+                                    }</Fragment>
+                                )
+                            })
+                        }</div>
+                    )
                     
                     //  Right side image
                     image = <div className={styles.imageholder}><ImageCard {...image} /></div>;
 
                     //  Images
-                    images = (typeof images !== 'undefined') 
-                        ?   <div className={styles.mobilimages}>
-                                <div className={styles.mb_imgcon}>
-                                    {
-                                        images.map((img,i)=> {
-                                            return <div className={styles.mb_img} key={i}><ContentImageCard {...img}/></div>   
-                                        })
-                                    }
-                                </div>
+                    images = (!!images) && (
+                        <div className={styles.mobilimages}>
+                            <div className={styles.mb_imgcon}>
+                                {
+                                    images.map((img,i)=> {
+                                        return <div className={styles.mb_img} key={i}><ContentImageCard {...img}/></div>   
+                                    })
+                                }
                             </div>
-                        :   null;
+                        </div>
+                    )
 
                     //  contact us button
                     const contact_us = <div className={styles.buttoncon}><button onClick={()=>ModalControl()}><div className={styles.text}>contact us</div></button><div className={styles.btnplaceholder}></div></div>
@@ -114,9 +110,7 @@ function ContentImageCard(props) {
     }
 
     //  Set image style
-    let image_style = (ImageWidth !== 0 ) 
-        ?   {width: ImageWidth, height: ImageHeight, position: 'relative'}
-        :   null;
+    let image_style = (ImageWidth !== 0 ) && {width: ImageWidth, height: ImageHeight, position: 'relative'}
 
     return (
         <div className={styles.ContentImageCard} style={image_style}>

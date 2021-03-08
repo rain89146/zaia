@@ -45,15 +45,10 @@ export default function BannerImageCardTemplate(props) {
 
 function ContentTemplate (props) {
     let {text, remark, url} = props;
-
-    remark = (typeof remark !== 'undefined')
-        ?   <div className={styles.remark}><p>{remark}</p></div>
-        :   null
-
     return (
         <div className={styles.content}>
             <div className={styles.title}><h1>{text}</h1></div>
-            {remark}
+            {(!!remark) && <div className={styles.remark}><p>{remark}</p></div>}
             <div className={styles.buttoncon}>
                 <Link href={url}>
                     <a>learn more</a>

@@ -13,18 +13,14 @@ export default function Form(props) {
     } = props;
     
     //  Custom styles
-    let styles = (typeof formStyles !== 'undefined')
+    let styles = (!!formStyles)
         ?   formStyles
         :   mainstyles;
-    
-    //  Form title
-    title = (typeof title !== 'undefined')
-        ?   <div className={styles.titlecon}><h1>{title}</h1></div>
-        :   null;
 
+    //  Render
     return (
         <div className={styles.con}>
-            {title}
+            {(!!title) && <div className={styles.titlecon}><h1>{title}</h1></div>}
             <div className={styles.formcon}>{
                 (formContent !== null ) && formContent.map((cnts,i) => {
                     switch(cnts.type) {

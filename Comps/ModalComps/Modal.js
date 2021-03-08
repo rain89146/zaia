@@ -1,16 +1,11 @@
 import styles from './Modal.module.scss';
 export default function Modal(props) {
-    let {is_open, controlButton, is_mini} = props;
+    let {is_open, is_mini} = props;
 
     //  View class
     let view_class = (is_open) 
         ?   `${styles.diaglogSelf} ${styles.show}`
         :   `${styles.diaglogSelf} ${styles.hide}`;
-    
-    //  control button
-        controlButton = (typeof controlButton !== 'undefined')
-        ?   <div className={styles.controller}>{controlButton}</div>
-        :   null;
 
     //  Returns nothing when is close
     if(is_open === false){ return null }

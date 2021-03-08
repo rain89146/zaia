@@ -22,7 +22,7 @@ export default function index() {
 
     //  Router update
     useEffect(() => {
-        if(projectid !== null && typeof projectid !== 'undefined') {
+        if(!!projectid){
             let data = Data();
             let content = data[projectid];
             setPageContent(content);
@@ -32,7 +32,7 @@ export default function index() {
     //  Render
     return (
         <MainLayout title={'ZAIA'}>{
-            (PageContent !== null && typeof PageContent !== 'undefined') &&   
+            ( !!PageContent ) &&   
             <>
                 <LandscapeImageBanner {...PageContent.section_0.image}/>
                 <ContentWithImageTitle {...PageContent.section_1}/>

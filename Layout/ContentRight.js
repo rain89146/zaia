@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './ContentLeftRight.module.scss'
 export default function ContentRight(props) {
     let {content, image} = props;
-        image = (typeof image !== 'undefined') 
+        image = (!!image) 
             ?   <div className={styles.left}>{image}</div>
             :   <div className={styles.left}></div>
     return (

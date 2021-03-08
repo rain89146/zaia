@@ -64,7 +64,7 @@ export default function TopNavigation() {
                         <ul>
                             {
                                 nav_context.map((nav,i) => {
-                                    let menu_item = (typeof nav.submenu !== 'undefined')
+                                    let menu_item = (!!nav.submenu)
                                         ?   <SubMenuTab {...nav}/>
                                         :   <MainMenuTab {...nav}/>
 
