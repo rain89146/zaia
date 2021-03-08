@@ -178,25 +178,7 @@ function CollapseableDrawer({content}) {
                         //  drawer icon
                         let icon = (showing)
                             ?   'close'
-                            :   'add'
-                        
-                        //  drawer holder
-                        let drawer = (showing == false)
-                            ?   null
-                            :   <div className={styles.drawer}>
-                                    {
-                                        list.map((ls, i) => {
-                                            let {text, url} = ls;
-                                            return (
-                                                <div className={styles.draweritem} key={i}>
-                                                    <Link href={url}>
-                                                        <a>{text}</a>
-                                                    </Link>
-                                                </div>
-                                            )
-                                        })
-                                    }
-                                </div>
+                            :   'add'                        
                         
                         return (
                             <div className={styles.sitemapitem} key={i}>
@@ -204,7 +186,23 @@ function CollapseableDrawer({content}) {
                                     <div className={styles.sitemaptitle}>{title}</div>
                                     <i className="material-icons">{icon}</i>
                                 </button>
-                                {drawer}
+                                {
+                                    (showing !== false) &&
+                                    <div className={styles.drawer}>
+                                        {
+                                            list.map((ls, i) => {
+                                                let {text, url} = ls;
+                                                return (
+                                                    <div className={styles.draweritem} key={i}>
+                                                        <Link href={url}>
+                                                            <a>{text}</a>
+                                                        </Link>
+                                                    </div>
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                }
                             </div>
                         )
                     })
