@@ -119,7 +119,7 @@
                             .customlink{
                                 font-size: 14px;
 
-                                a{
+                                button{
                                     text-decoration: underline;
                                 }
                             }
@@ -250,6 +250,108 @@
 
             .prefitem:last-child{
                 margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px){
+    
+}
+
+// ipad pro / ipad horizontal
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
+
+// ipad
+@media (min-width: 429px) and (max-width: 768px){
+
+}
+
+// iphonex && plus
+@media only screen and (max-width: 428px) {
+
+    .con{
+        .holder{
+            width: auto;
+    
+            .holdercon{
+                padding: 1rem;
+    
+                .closebtn{
+                    right: 1rem;
+                }
+    
+                .contentbody{
+                    padding-top: 2rem;
+                    
+                    .body{
+                        padding: 0;
+                        flex-direction: column;
+    
+                        .contentcon{
+                            width: 100%;
+                        }
+    
+                        .buttonsgroup{
+                            width: 100%;
+                            align-items: center;
+                            margin-top: 2rem;
+    
+                            .group{
+                                width: 100%;
+    
+                                .acceptbtn{
+                                    width: 100%;
+    
+                                    button{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cookiesettingcon{ 
+        .contentholder{
+            margin-bottom: 1rem;
+    
+            .prefholder{
+                margin-top: 1rem;
+    
+                .prefitem{
+                    margin-bottom: 1rem;
+    
+                    .container{
+                        width: 100%;
+                        height: auto;
+                        position: relative;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-self: stretch;
+    
+                        .prefcontent{
+
+                            .title{
+                                font-size: 16px;
+                                margin-bottom: 0;
+                            }
+    
+                            .desc{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+    
+                .prefitem:last-child{
+                    margin-bottom: 0;
+                }
             }
         }
     }
