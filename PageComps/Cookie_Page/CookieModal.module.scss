@@ -1,6 +1,6 @@
 .con{
     width: 100%;
-    height: 140px;
+    height: auto;
     position: relative;
     background: #FFFFFF;
     border-top: 1px solid #B4B4B4;
@@ -45,7 +45,8 @@
                 width: 100%;
                 height: 100%;
                 position: relative;
-
+                padding: 1rem 0;
+                
                 .body{
                     width: 100%;
                     height: 100%;
@@ -125,6 +126,130 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.cookiesettingcon{
+    width: 100%;
+    height: 100%;
+
+    .backbtn{
+        width: 100%;
+
+        button{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+    }
+
+    .contentholder{
+        margin: 2rem 0;
+
+        .titlecon{
+            h1{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                color: #373F43;
+                margin: 0;
+            }
+        }
+
+        .prefholder{
+            margin-top: 2rem;
+
+            .prefitem{
+                margin-bottom: 2rem;
+
+                .container{
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-self: stretch;
+
+                    .prefcontent{
+                        width: 80%;
+                        padding-right: 2rem;
+
+                        .title{
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 30px;
+                            color: #373F43;
+                            margin-bottom: .5rem;
+                        }
+
+                        .desc{
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 1.5;
+                            color: #000000;
+                        }
+                    }
+
+                    .togglebtncon{
+                        width: 20%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .togglebtn{
+                            width: 3.6rem;
+                            height: 2rem;
+                            background: #373F43;
+                            border-radius: 1.7rem;
+                            position: relative;
+                            border: 2px solid #373F43;
+
+                            .ballleft{
+                                opacity: 0;
+                                width: calc(2rem - 4px);
+                                height: 100%;
+                                border-radius: 100%;
+                                transition: all ease .5s;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                            }
+
+                            .ballright{
+                                opacity: 0;
+                                width: calc(2rem - 4px);
+                                height: 100%;
+                                border-radius: 100%;
+                                transition: all ease .5s;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                            }
+                        }
+
+                        .on{
+                            .ballright{
+                                opacity: 1;
+                                background: #FFFFFF;
+                            }
+                        }
+
+                        .off{
+                            .ballleft{
+                                opacity: 1;
+                                background: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .prefitem:last-child{
+                margin-bottom: 0;
             }
         }
     }

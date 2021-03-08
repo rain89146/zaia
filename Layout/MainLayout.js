@@ -11,9 +11,12 @@ export default function MainLayout(props) {
     //  States
     const [ZaiaObj, setZaiaObj] = useState(null);
     const [CookieShow, setCookieShow] = useState(false);
+    const [CookieSetting, setCookieSetting] = useState(null);
 
     //  When mount
     useEffect(() => {
+
+        //  Zaia cookie
         const zaia_data = Cookies.get('zaia');
         let obj = {};
         if(typeof zaia_data === 'undefined'){
@@ -36,6 +39,20 @@ export default function MainLayout(props) {
             }
         }
         setZaiaObj(obj);
+
+        //  Zaia cookie setting
+        const zaia_cookie_pref = Cookies.get('zaia_cookie_setting');
+        let pref_obj = ( !!zaia_cookie_pref ) 
+            ?   JSON.parse(zaia_cookie_pref)
+            :   {
+                    id: obj.id,
+                    ness: true,
+                    pref: true,
+                    perf: true,
+                    mark: false
+                };
+        setCookieSetting(pref_obj);
+        (!!zaia_cookie_pref === false) && Cookies.set('zaia_cookie_setting', JSON.stringify(pref_obj));
     }, []);
 
     //  modal control
@@ -57,6 +74,18 @@ export default function MainLayout(props) {
         }));
     }
 
+    //  update Cookie Setting
+    const updateCookieSetting = (key, value) => {
+
+        Cookies.set('zaia_cookie_setting', JSON.stringify({
+            ...CookieSetting, [key]:value
+        }))
+
+        setCookieSetting(prev => {
+            return {...prev, [key]:value}
+        })
+    }
+
     //  Render
     return (
         <Fragment>
@@ -65,7 +94,7 @@ export default function MainLayout(props) {
             <div className={styles.body}>{props.children}</div>    
             <BottomNavigation />
             {
-                (CookieShow) && <CookieModal {...ZaiaObj} close={closeModal} accept={acceptCookie} showing={CookieShow}/>
+                (CookieShow) && <CookieModal {...ZaiaObj} close={closeModal} accept={acceptCookie} showing={CookieShow} pref={CookieSetting} setpref={updateCookieSetting}/>
             }
         </Fragment>
     )
