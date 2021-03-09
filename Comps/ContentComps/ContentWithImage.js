@@ -4,6 +4,7 @@ import ContactForm from '../../PageComps/ContactForm/ContactForm';
 import ImageCard from '../ImageComps/ImageCard';
 import Modal from '../ModalComps/Modal';
 import styles from './ContentWithImage.module.scss';
+import {Image, Transformation, Placeholder} from 'cloudinary-react';
 
 export default function ContentWithImage(props) {
     //  
@@ -89,43 +90,27 @@ export default function ContentWithImage(props) {
 }
 
 //  Content image card
-function ContentImageCard(props) {
+function ContentImageCard({ title, publicId } ) {
 
-    //
-    const {src, title} = props;
-
-    //
-    const [ImageWidth, setImageWidth] = useState(0);
-    const [ImageHeight, setImageHeight] = useState(0);
-
-    //  When image load
-    const ImageOnLoad = ({target:img}) => {
-
-        const viewport_width = img.offsetWidth;
-        const image_width = img.naturalWidth;
-        const ratio = viewport_width / image_width;
-
-        setImageHeight(img.naturalHeight * ratio);
-        setImageWidth(viewport_width);
+    //  Cloudinary config
+    const cloudinary_setting = (!!publicId) && {
+        cloudName: 'dgqsldchb',
+        publicId: `${publicId}.webp`,
+        crop: "fill",
+        alt: title,
+        loading: "lazy",
+        dpr: "auto",
+        responsive: true,
+        width: "auto",
+        responsiveUseBreakpoints: "true"
     }
 
-    //  Set image style
-    let image_style = (ImageWidth !== 0 ) 
-        ?   {width: ImageWidth, height: ImageHeight, position: 'relative'}
-        :   null;
-
     return (
-        <div className={styles.ContentImageCard} style={image_style}>
-            <div className={styles.con}>
-                <img 
-                    src = {src}
-                    decoding="async"
-                    title={title}
-                    loading="lazy"
-                    onLoad={ImageOnLoad}
-                />
-            </div>
-            <div className={styles.backgroundmock}></div>
+        <div className={styles.ContentImageCard}>
+            <Image {...cloudinary_setting}>
+                <Transformation fetchFormat="auto" crop="scale" quality="auto" />
+                <Placeholder type="pixelate"></Placeholder>
+            </Image>
         </div>
     )
 }

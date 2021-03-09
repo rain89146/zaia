@@ -3,7 +3,8 @@ export default function Services() {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008428/zaia/remodeling/banner_oa65my.jpg',
-                title: 'Remodeling'
+                title: 'Remodeling',
+                publicId: 'v1615312708/zaia/all/WX20201201-125550_ipubvi'
             },
             text: 'Remodeling'
         },
@@ -12,17 +13,19 @@ export default function Services() {
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008427/zaia/remodeling/living_wmkfzq.jpg',
-                        title: '门廊及客厅改建'
+                        title: '门廊及客厅改建',
+                        publicId: 'v1615312691/zaia/all/WX20201201-125615_2x_hojing'
                     },
                     text: '门廊及客厅改建',
                     remark: 'ZAIA门廊与客厅改建，让你每一天回家的感受都是美好时刻。',
                     url: '/services/remodeling/living',
-                    position: 'left'
+                    position: 'left',
                 },
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008427/zaia/remodeling/kitchen_jimvyu.jpg',
-                        title: '厨房改建'
+                        title: '厨房改建',
+                        publicId: 'v1615314030/zaia/all/aaron-huber-G7sE2S4Lab4-unsplash_1_u2pei0'
                     },
                     text: '厨房改建',
                     remark: 'ZAIA厨房改建，美食，除了味道，更是因为充斥着家的味道。',
@@ -32,7 +35,8 @@ export default function Services() {
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008427/zaia/remodeling/bathroom_himof6.jpg',
-                        title: '浴室改建'
+                        title: '浴室改建',
+                        publicId: 'v1615312679/zaia/all/r-architecture-HQCW1gTMjek-unsplash_msyprk',
                     },
                     text: '浴室改建',
                     remark: 'ZAIA浴室改建，洗去配备的，除了家的温暖，还有浴室中最温暖的水流',
@@ -46,27 +50,30 @@ export default function Services() {
             contents: [
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615312471/zaia/all/image_68_dl9t27.jpg',
+                        title: 'Fairhaven Ave',
+                        publicId: 'v1615324708/zaia/all/project3/image_60_uwqtxi'
                     },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
+                    text: 'Fairhaven Ave',
+                    url: '/projects/project3'
                 },
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
+                        title: 'Archwood St',
+                        publicId: 'v1615325637/zaia/all/project8/image_92_zmcjea'
                     },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
+                    text: 'Archwood St',
+                    url: '/projects/project8'
                 },
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615313802/zaia/all/Screen_Shot_2021-01-07_at_5.36_1_m0rctg.jpg',
+                        title: 'Wellesley Ave, Los Angeles',
+                        publicId: 'v1615313802/zaia/all/project2/Screen_Shot_2021-01-07_at_5.36_1_m0rctg'
                     },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
+                    text: 'Wellesley Ave, Los Angeles',
+                    url: '/projects/project2'
                 },
             ]
         }
@@ -76,7 +83,8 @@ export default function Services() {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008036/zaia/design/banner_mby7pz.jpg',
-                title: 'Design'
+                title: 'Design',
+                publicId: 'v1615319018/zaia/all/Design/jean-philippe-delberghe-PVQnaFyePvU-unsplash_1_rt3b0c'
             },
             text: 'Design'
         },
@@ -85,7 +93,8 @@ export default function Services() {
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008035/zaia/design/interior_design_nimbfw.jpg',
-                        title: '室内设计'
+                        title: '室内设计',
+                        publicId: 'v1615319008/zaia/all/Design/16_bein0q'
                     },
                     text: '室内设计',
                     remark: '规划梦想很大，先从家开始。',
@@ -95,7 +104,8 @@ export default function Services() {
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008035/zaia/design/furniture_design_zwye41.jpg',
-                        title: '软装设计'
+                        title: '软装设计',
+                        publicId: 'v1615319005/zaia/all/Design/33_wcxksj'
                     },
                     text: '软装设计',
                     remark: '精致方案的完美结尾。',
@@ -105,7 +115,8 @@ export default function Services() {
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008033/zaia/design/smarthome_lzjmoh.jpg',
-                        title: '家居智能化设计'
+                        title: '家居智能化设计',
+                        publicId: 'v1615319015/zaia/all/Design/bence-boros-anapPhJFRhM-unsplash_1_1_brpbcd'
                     },
                     text: '家居智能化设计',
                     remark: '让你的房屋学会思考。',
@@ -119,27 +130,30 @@ export default function Services() {
             contents: [
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615312471/zaia/all/image_68_dl9t27.jpg',
+                        title: 'Fairhaven Ave',
+                        publicId: 'v1615324708/zaia/all/project3/image_60_uwqtxi'
                     },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
+                    text: 'Fairhaven Ave',
+                    url: '/projects/project3'
                 },
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
+                        title: 'Archwood St',
+                        publicId: 'v1615325637/zaia/all/project8/image_92_zmcjea'
                     },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
+                    text: 'Archwood St',
+                    url: '/projects/project8'
                 },
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615313802/zaia/all/Screen_Shot_2021-01-07_at_5.36_1_m0rctg.jpg',
+                        title: 'Wellesley Ave, Los Angeles',
+                        publicId: 'v1615313802/zaia/all/project2/Screen_Shot_2021-01-07_at_5.36_1_m0rctg'
                     },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
+                    text: 'Wellesley Ave, Los Angeles',
+                    url: '/projects/project2'
                 },
             ]
         }
@@ -148,8 +162,9 @@ export default function Services() {
     const construction = {
         section_0: {
             image: {
-                src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007937/zaia/construction/banner_yhnxwz.jpg',
-                title: 'Construction'
+                src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615312709/zaia/all/banner_j696mw.jpg',
+                title: 'Construction',
+                publicId: 'v1615312709/zaia/all/banner_j696mw'
             },
             text: 'Construction'
         },
@@ -158,7 +173,8 @@ export default function Services() {
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007936/zaia/construction/ADU_fa20be.jpg',
-                        title: 'ADU加建'
+                        title: 'ADU加建',
+                        publicId: 'v1615312698/zaia/all/milivoj-kuhar-Te48TPzdcU8-unsplash_vctwtk',
                     },
                     text: 'ADU加建',
                     remark: 'ADU加建，让你拥有第二个家。',
@@ -168,7 +184,8 @@ export default function Services() {
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007936/zaia/construction/NewConstruction_gwgeb6.jpg',
-                        title: 'New Construction'
+                        title: 'New Construction',
+                        publicId: 'v1615312695/zaia/all/james-sullivan-ESZRBtkQ_f8-unsplash_2_uvhtz6'
                     },
                     text: 'New Construction',
                     url: '/services/construction/NewConstruction',
@@ -181,27 +198,30 @@ export default function Services() {
             contents: [
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615312471/zaia/all/image_68_dl9t27.jpg',
+                        title: 'Fairhaven Ave',
+                        publicId: 'v1615324708/zaia/all/project3/image_60_uwqtxi'
                     },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
+                    text: 'Fairhaven Ave',
+                    url: '/projects/project3'
                 },
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
+                        title: 'Archwood St',
+                        publicId: 'v1615325637/zaia/all/project8/image_92_zmcjea'
                     },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
+                    text: 'Archwood St',
+                    url: '/projects/project8'
                 },
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615313802/zaia/all/Screen_Shot_2021-01-07_at_5.36_1_m0rctg.jpg',
+                        title: 'Wellesley Ave, Los Angeles',
+                        publicId: 'v1615313802/zaia/all/project2/Screen_Shot_2021-01-07_at_5.36_1_m0rctg'
                     },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
+                    text: 'Wellesley Ave, Los Angeles',
+                    url: '/projects/project2'
                 },
             ]
         }
@@ -212,6 +232,7 @@ export default function Services() {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008427/zaia/remodeling/bathroom_himof6.jpg',
+                publicId: 'v1615312679/zaia/all/r-architecture-HQCW1gTMjek-unsplash_msyprk',
                 title: '浴室改建'
             },
             text: '浴室改建'
@@ -221,7 +242,8 @@ export default function Services() {
                 {
                     image: {
                         src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008487/zaia/remodeling/bathroom/claus-grunstaudl-I72dFJRFT3k-unsplash_gpgolx.jpg',
-                        title: '浴室改建'
+                        title: '浴室改建',
+                        publicId: 'v1615312643/zaia/all/bathroom/claus-grunstaudl-I72dFJRFT3k-unsplash_m9gdaq',
                     },
                     subtitle: '',
                     title: '',
@@ -231,7 +253,8 @@ export default function Services() {
                     images: [
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008487/zaia/remodeling/bathroom/claus-grunstaudl-I72dFJRFT3k-unsplash_gpgolx.jpg',
-                            title: '浴室改建'
+                            title: '浴室改建',
+                            publicId: 'v1615312643/zaia/all/bathroom/claus-grunstaudl-I72dFJRFT3k-unsplash_m9gdaq',
                         }
                     ]
                 }
@@ -242,51 +265,30 @@ export default function Services() {
             contents: [
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615312471/zaia/all/image_68_dl9t27.jpg',
+                        title: 'Fairhaven Ave',
+                        publicId: 'v1615324708/zaia/all/project3/image_60_uwqtxi'
                     },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
+                    text: 'Fairhaven Ave',
+                    url: '/projects/project3'
                 },
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
+                        title: 'Archwood St',
+                        publicId: 'v1615325637/zaia/all/project8/image_92_zmcjea'
                     },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
+                    text: 'Archwood St',
+                    url: '/projects/project8'
                 },
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615313802/zaia/all/Screen_Shot_2021-01-07_at_5.36_1_m0rctg.jpg',
+                        title: 'Wellesley Ave, Los Angeles',
+                        publicId: 'v1615313802/zaia/all/project2/Screen_Shot_2021-01-07_at_5.36_1_m0rctg'
                     },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
-                    },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
-                    },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
-                    },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
+                    text: 'Wellesley Ave, Los Angeles',
+                    url: '/projects/project2'
                 },
             ]
         }
@@ -296,7 +298,8 @@ export default function Services() {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008427/zaia/remodeling/kitchen_jimvyu.jpg',
-                title: '厨房改建'
+                title: '厨房改建',
+                publicId: 'v1615314030/zaia/all/aaron-huber-G7sE2S4Lab4-unsplash_1_u2pei0'
             },
             text: '厨房改建'
         },
@@ -305,7 +308,8 @@ export default function Services() {
                 {
                     image: {
                         src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008465/zaia/remodeling/kitchen/beautiful-shot-modern-house-kitchen_bicwv4.jpg',
-                        title: '厨房改建'
+                        title: '厨房改建',
+                        publicId: 'v1615312685/zaia/all/kitchen/beautiful-shot-modern-house-kitchen_fkaoau'
                     },
                     title: '',
                     subtitle: '',
@@ -317,19 +321,23 @@ export default function Services() {
                     images: [
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008465/zaia/remodeling/kitchen/beautiful-shot-modern-house-kitchen_bicwv4.jpg',
-                            title: '厨房改建'
+                            title: '厨房改建',
+                            publicId: 'v1615312685/zaia/all/kitchen/beautiful-shot-modern-house-kitchen_fkaoau'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008464/zaia/remodeling/kitchen/pexels-mark-mccammon-2724749_tdjmaj.jpg',
-                            title: '厨房改建'
+                            title: '厨房改建',
+                            publicId: 'v1615312651/zaia/all/kitchen/pexels-mark-mccammon-2724749_lwjemz'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008464/zaia/remodeling/kitchen/pexels-curtis-adams-4682110_jxjfre.jpg',
-                            title: '厨房改建'
+                            title: '厨房改建',
+                            publicId: 'v1615312653/zaia/all/kitchen/pexels-curtis-adams-4682110_mnm6yp'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008465/zaia/remodeling/kitchen/beautiful-shot-of-modern-house-kitchen_ccjseo.jpg',
-                            title: '厨房改建'
+                            title: '厨房改建',
+                            publicId: 'v1615313796/zaia/all/kitchen/beautiful-shot-of-modern-house-kitchen_spzoqw'
                         }
                     ]
                 }
@@ -340,51 +348,30 @@ export default function Services() {
             contents: [
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615312471/zaia/all/image_68_dl9t27.jpg',
+                        title: 'Fairhaven Ave',
+                        publicId: 'v1615324708/zaia/all/project3/image_60_uwqtxi'
                     },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
+                    text: 'Fairhaven Ave',
+                    url: '/projects/project3'
                 },
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
+                        title: 'Archwood St',
+                        publicId: 'v1615325637/zaia/all/project8/image_92_zmcjea'
                     },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
+                    text: 'Archwood St',
+                    url: '/projects/project8'
                 },
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615313802/zaia/all/Screen_Shot_2021-01-07_at_5.36_1_m0rctg.jpg',
+                        title: 'Wellesley Ave, Los Angeles',
+                        publicId: 'v1615313802/zaia/all/project2/Screen_Shot_2021-01-07_at_5.36_1_m0rctg'
                     },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
-                    },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
-                    },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
-                    },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
+                    text: 'Wellesley Ave, Los Angeles',
+                    url: '/projects/project2'
                 },
             ]
         }
@@ -394,7 +381,8 @@ export default function Services() {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008427/zaia/remodeling/living_wmkfzq.jpg',
-                title: '门廊及客厅改建'
+                title: '门廊及客厅改建',
+                publicId: 'v1615312691/zaia/all/WX20201201-125615_2x_hojing'
             },
             text: '门廊及客厅改建'
         },
@@ -403,7 +391,8 @@ export default function Services() {
                 {
                     image: {
                         src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008476/zaia/remodeling/living/pexels-vecislavas-popa-1571460_exarhu.jpg',
-                        title: '门廊及客厅改建'
+                        title: '门廊及客厅改建',
+                        publicId: 'v1615312663/zaia/all/livingroom/pexels-vecislavas-popa-1571460_jmmy1b'
                     },
                     title: '',
                     subtitle: '',
@@ -413,19 +402,23 @@ export default function Services() {
                     images: [
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008476/zaia/remodeling/living/pexels-vecislavas-popa-1571460_exarhu.jpg',
-                            title: '门廊及客厅改建'
+                            title: '门廊及客厅改建',
+                            publicId: 'v1615312663/zaia/all/livingroom/pexels-vecislavas-popa-1571460_jmmy1b'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008476/zaia/remodeling/living/pexels-terry-magallanes-2988860_1_ekh1dg.jpg',
-                            title: '门廊及客厅改建'
+                            title: '门廊及客厅改建',
+                            publicId: 'v1615313796/zaia/all/livingroom/pexels-terry-magallanes-2988860_1_da2ppb'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008476/zaia/remodeling/living/pexels-christa-grover-2121121_wacfwb.jpg',
-                            title: '门廊及客厅改建'
+                            title: '门廊及客厅改建',
+                            publicId: 'v1615320707/zaia/all/livingroom/pexels-christa-grover-2121121_gtx6xl'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008476/zaia/remodeling/living/interior-living-area-modern-luxury-style-3d-rendering_vyvc8x.jpg',
-                            title: '门廊及客厅改建'
+                            title: '门廊及客厅改建',
+                            publicId: 'v1615313793/zaia/all/livingroom/interior-living-area-modern-luxury-style-3d-rendering_nxajtc'
                         }
                     ]
                 }
@@ -436,51 +429,30 @@ export default function Services() {
             contents: [
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615312471/zaia/all/image_68_dl9t27.jpg',
+                        title: 'Fairhaven Ave',
+                        publicId: 'v1615324708/zaia/all/project3/image_60_uwqtxi'
                     },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
+                    text: 'Fairhaven Ave',
+                    url: '/projects/project3'
                 },
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
+                        title: 'Archwood St',
+                        publicId: 'v1615325637/zaia/all/project8/image_92_zmcjea'
                     },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
+                    text: 'Archwood St',
+                    url: '/projects/project8'
                 },
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615313802/zaia/all/Screen_Shot_2021-01-07_at_5.36_1_m0rctg.jpg',
+                        title: 'Wellesley Ave, Los Angeles',
+                        publicId: 'v1615313802/zaia/all/project2/Screen_Shot_2021-01-07_at_5.36_1_m0rctg'
                     },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
-                    },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
-                    },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
-                    },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
+                    text: 'Wellesley Ave, Los Angeles',
+                    url: '/projects/project2'
                 },
             ]
         }
@@ -491,7 +463,8 @@ export default function Services() {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008035/zaia/design/interior_design_nimbfw.jpg',
-                title: '室内设计'
+                title: '室内设计',
+                publicId: 'v1615319008/zaia/all/Design/16_bein0q'
             },
             text: '室内设计'
         },
@@ -500,7 +473,8 @@ export default function Services() {
                 {
                     image: {
                         src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008064/zaia/design/interiordesign/image_56_j2mk5l.jpg',
-                        title: '室内设计'
+                        title: '室内设计',
+                        publicId: 'v1615323227/zaia/all/Design/image_56_mqwygf'
                     },
                     subtitle: '梦想很大，从家开始。',
                     title: '',
@@ -512,19 +486,23 @@ export default function Services() {
                     images: [
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008064/zaia/design/interiordesign/image_56_j2mk5l.jpg',
-                            title: '室内设计'
+                            title: '室内设计',
+                            publicId: 'v1615323227/zaia/all/Design/image_56_mqwygf'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008064/zaia/design/interiordesign/image_57_fmzw8s.jpg',
-                            title: '室内设计'
+                            title: '室内设计',
+                            publicId: 'v1615323177/zaia/all/Design/image_57_tq7znh'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008064/zaia/design/interiordesign/image_58_mvs78i.jpg',
-                            title: '室内设计'
+                            title: '室内设计',
+                            publicId: 'v1615323092/zaia/all/Design/image_58_pz6i3m'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008064/zaia/design/interiordesign/image_55_bvjs3c.jpg',
-                            title: '室内设计'
+                            title: '室内设计',
+                            publicId: 'v1615323192/zaia/all/Design/image_55_zkjfkt'
                         }
                     ]
                 }
@@ -535,51 +513,30 @@ export default function Services() {
             contents: [
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615312471/zaia/all/image_68_dl9t27.jpg',
+                        title: 'Fairhaven Ave',
+                        publicId: 'v1615324708/zaia/all/project3/image_60_uwqtxi'
                     },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
+                    text: 'Fairhaven Ave',
+                    url: '/projects/project3'
                 },
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
+                        title: 'Archwood St',
+                        publicId: 'v1615325637/zaia/all/project8/image_92_zmcjea'
                     },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
+                    text: 'Archwood St',
+                    url: '/projects/project8'
                 },
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615313802/zaia/all/Screen_Shot_2021-01-07_at_5.36_1_m0rctg.jpg',
+                        title: 'Wellesley Ave, Los Angeles',
+                        publicId: 'v1615313802/zaia/all/project2/Screen_Shot_2021-01-07_at_5.36_1_m0rctg'
                     },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
-                    },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
-                    },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
-                    },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
+                    text: 'Wellesley Ave, Los Angeles',
+                    url: '/projects/project2'
                 },
             ]
         }
@@ -589,7 +546,8 @@ export default function Services() {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008035/zaia/design/furniture_design_zwye41.jpg',
-                title: '软装设计'
+                title: '软装设计',
+                publicId: 'v1615319005/zaia/all/Design/33_wcxksj'
             },
             text: '软装设计'
         },
@@ -598,7 +556,8 @@ export default function Services() {
                 {
                     image: {
                         src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008079/zaia/design/furnituredesign/pexels-pixabay-462235_1_utliia.jpg',
-                        title: '软装设计'
+                        title: '软装设计',
+                        publicId: 'v1615323541/zaia/all/Design/pexels-pixabay-462235_1_iv1oaj'
                     },
                     subtitle: '精致方案的完美结尾。',
                     title: '',
@@ -609,19 +568,23 @@ export default function Services() {
                     images: [
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008079/zaia/design/furnituredesign/pexels-pixabay-462235_1_utliia.jpg',
-                            title: '软装设计'
+                            title: '软装设计',
+                            publicId: 'v1615323541/zaia/all/Design/pexels-pixabay-462235_1_iv1oaj'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008078/zaia/design/furnituredesign/pexels-terje-sollie-298842_lsnrnp.jpg',
-                            title: '软装设计'
+                            title: '软装设计',
+                            publicId: 'v1615323532/zaia/all/Design/pexels-terje-sollie-298842_x82qjl'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008078/zaia/design/furnituredesign/pexels-chait-goli-3991265_xpteat.jpg',
-                            title: '软装设计'
+                            title: '软装设计',
+                            publicId: 'v1615323545/zaia/all/Design/pexels-chait-goli-3991265_qa0pg4'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008080/zaia/design/furnituredesign/pexels-vecislavas-popa-1571471_1_wa4qa6.jpg',
-                            title: '软装设计'
+                            title: '软装设计',
+                            publicId: 'v1615323553/zaia/all/Design/pexels-vecislavas-popa-1571471_1_nlhust'
                         }
                     ]
                 }
@@ -632,51 +595,30 @@ export default function Services() {
             contents: [
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615312471/zaia/all/image_68_dl9t27.jpg',
+                        title: 'Fairhaven Ave',
+                        publicId: 'v1615324708/zaia/all/project3/image_60_uwqtxi'
                     },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
+                    text: 'Fairhaven Ave',
+                    url: '/projects/project3'
                 },
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
+                        title: 'Archwood St',
+                        publicId: 'v1615325637/zaia/all/project8/image_92_zmcjea'
                     },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
+                    text: 'Archwood St',
+                    url: '/projects/project8'
                 },
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615313802/zaia/all/Screen_Shot_2021-01-07_at_5.36_1_m0rctg.jpg',
+                        title: 'Wellesley Ave, Los Angeles',
+                        publicId: 'v1615313802/zaia/all/project2/Screen_Shot_2021-01-07_at_5.36_1_m0rctg'
                     },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
-                    },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
-                    },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
-                    },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
+                    text: 'Wellesley Ave, Los Angeles',
+                    url: '/projects/project2'
                 },
             ]
         }
@@ -686,7 +628,8 @@ export default function Services() {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008033/zaia/design/smarthome_lzjmoh.jpg',
-                title: '让你的房屋学会思考。'
+                title: '让你的房屋学会思考。',
+                publicId: 'v1615319015/zaia/all/Design/bence-boros-anapPhJFRhM-unsplash_1_1_brpbcd'
             },
             text: '让你的房屋学会思考。'
         },
@@ -695,7 +638,8 @@ export default function Services() {
                 {
                     image: {
                         src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008050/zaia/design/smarthome/smart-speaker-house-control-innovative-technology_1_qplfzz.jpg',
-                        title: '让你的房屋学会思考。'
+                        title: '让你的房屋学会思考。',
+                        publicId: 'v1615312398/zaia/all/Design/smart-speaker-house-control-innovative-technology_1_scnfrz'
                     },
                     subtitle: '让你的房屋学会思考。',
                     title: '',
@@ -705,19 +649,23 @@ export default function Services() {
                     images: [
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008050/zaia/design/smarthome/smart-speaker-house-control-innovative-technology_1_qplfzz.jpg',
-                            title: '让你的房屋学会思考。'
+                            title: '让你的房屋学会思考。',
+                            publicId: 'v1615312398/zaia/all/Design/smart-speaker-house-control-innovative-technology_1_scnfrz'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008050/zaia/design/smarthome/smartphone-connecting-floor-heating-controller-kitchen-remote-home-control-system-smartphone_1_ysjnzm.jpg',
-                            title: '让你的房屋学会思考。'
+                            title: '让你的房屋学会思考。',
+                            publicId: 'v1615323844/zaia/all/Design/smartphone-connecting-floor-heating-controller-kitchen-remote-home-control-system-smartphone_1_vin01j'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008049/zaia/design/smarthome/woman-running-house-with-smart-home-system_1_zsgxhv.jpg',
-                            title: '让你的房屋学会思考。'
+                            title: '让你的房屋学会思考。',
+                            publicId: 'v1615323843/zaia/all/Design/woman-running-house-with-smart-home-system_1_mjmali'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008049/zaia/design/smarthome/digital-tabconst-screen-with-smart-home-controller-on-wooden-table_1_aunpxf.jpg',
-                            title: '让你的房屋学会思考。'
+                            title: '让你的房屋学会思考。',
+                            publicId: 'v1615323848/zaia/all/Design/digital-tablet-screen-with-smart-home-controller-on-wooden-table_1_kq2bxr'
                         }
                     ]
                 }
@@ -728,51 +676,30 @@ export default function Services() {
             contents: [
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615312471/zaia/all/image_68_dl9t27.jpg',
+                        title: 'Fairhaven Ave',
+                        publicId: 'v1615324708/zaia/all/project3/image_60_uwqtxi'
                     },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
+                    text: 'Fairhaven Ave',
+                    url: '/projects/project3'
                 },
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
+                        title: 'Archwood St',
+                        publicId: 'v1615325637/zaia/all/project8/image_92_zmcjea'
                     },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
+                    text: 'Archwood St',
+                    url: '/projects/project8'
                 },
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615313802/zaia/all/Screen_Shot_2021-01-07_at_5.36_1_m0rctg.jpg',
+                        title: 'Wellesley Ave, Los Angeles',
+                        publicId: 'v1615313802/zaia/all/project2/Screen_Shot_2021-01-07_at_5.36_1_m0rctg'
                     },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
-                    },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
-                    },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
-                    },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
+                    text: 'Wellesley Ave, Los Angeles',
+                    url: '/projects/project2'
                 },
             ]
         }
@@ -783,7 +710,8 @@ export default function Services() {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007936/zaia/construction/ADU_fa20be.jpg',
-                title: 'ADU加建'
+                title: 'ADU加建',
+                publicId: 'v1615312698/zaia/all/milivoj-kuhar-Te48TPzdcU8-unsplash_vctwtk',
             },
             text: 'ADU加建'
         },
@@ -792,7 +720,8 @@ export default function Services() {
                 {
                     image: {
                         src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007962/zaia/construction/adu/henry-co-3coKbdfnAFg-unsplash_1_ximtli.jpg',
-                        title: 'ADU加建'
+                        title: 'ADU加建',
+                        publicId: 'v1615313783/zaia/all/construction/henry-co-3coKbdfnAFg-unsplash_1_huimze'
                     },
                     contents: [
                         '<p>改造房屋是一项大工程，但一个精心策划的房屋加建工程，将快速的提升房屋价值。通过房屋加建，您房屋将会提升价值并扩大其使用面积。同时，通过完美的材料选择和细节设计还能提升您房屋的特色打造未来的升值空间，最终使您的投资最大化。</p>',
@@ -801,19 +730,23 @@ export default function Services() {
                     images: [
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007962/zaia/construction/adu/henry-co-3coKbdfnAFg-unsplash_1_ximtli.jpg',
-                            title: 'ADU加建'
+                            title: 'ADU加建',
+                            publicId: 'v1615313783/zaia/all/construction/henry-co-3coKbdfnAFg-unsplash_1_huimze'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007961/zaia/construction/adu/image-of-engineering-objects-on-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus_1_gwwtwp.jpg',
-                            title: 'ADU加建'
+                            title: 'ADU加建',
+                            publicId: 'v1615312710/zaia/all/construction/image-of-engineering-objects-on-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus_1_dhsmlc'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007964/zaia/construction/adu/construction-engineer-worker-civil-engineer-checking-work-construction-site-house-construction-concept_1_bawfld.jpg',
-                            title: 'ADU加建'
+                            title: 'ADU加建',
+                            publicId: 'v1615313774/zaia/all/construction/construction-engineer-worker-civil-engineer-checking-work-construction-site-house-construction-concept_1_huprtf'
                         },
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007961/zaia/construction/adu/pexels-pixabay-210617_i80hxd.jpg',
-                            title: 'ADU加建'
+                            title: 'ADU加建',
+                            publicId: 'v1615312689/zaia/all/construction/pexels-pixabay-210617_tzvigx'
                         }
                     ]
                 }
@@ -824,51 +757,30 @@ export default function Services() {
             contents: [
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615312471/zaia/all/image_68_dl9t27.jpg',
+                        title: 'Fairhaven Ave',
+                        publicId: 'v1615324708/zaia/all/project3/image_60_uwqtxi'
                     },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
+                    text: 'Fairhaven Ave',
+                    url: '/projects/project3'
                 },
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
+                        title: 'Archwood St',
+                        publicId: 'v1615325637/zaia/all/project8/image_92_zmcjea'
                     },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
+                    text: 'Archwood St',
+                    url: '/projects/project8'
                 },
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615313802/zaia/all/Screen_Shot_2021-01-07_at_5.36_1_m0rctg.jpg',
+                        title: 'Wellesley Ave, Los Angeles',
+                        publicId: 'v1615313802/zaia/all/project2/Screen_Shot_2021-01-07_at_5.36_1_m0rctg'
                     },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
-                    },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
-                    },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
-                    },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
+                    text: 'Wellesley Ave, Los Angeles',
+                    url: '/projects/project2'
                 },
             ]
         }
@@ -878,7 +790,8 @@ export default function Services() {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007936/zaia/construction/NewConstruction_gwgeb6.jpg',
-                title: 'New Construction'
+                title: 'New Construction',
+                publicId: 'v1615312695/zaia/all/james-sullivan-ESZRBtkQ_f8-unsplash_2_uvhtz6'
             },
             text: 'New Construction'
         },
@@ -887,26 +800,30 @@ export default function Services() {
                 {
                     image: {
                         src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007946/zaia/construction/NewCostruction/carpenter-man-working-roof_pwk4sz.jpg',
-                        title: 'residential construction'
+                        title: 'residential construction',
+                        publicId: 'v1615312700/zaia/all/construction/carpenter-man-working-roof_w14h2v'
                     },
                     title: 'residential construction',
                     images: [
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007946/zaia/construction/NewCostruction/carpenter-man-working-roof_pwk4sz.jpg',
-                            title: 'residential construction'
+                            title: 'residential construction',
+                            publicId: 'v1615312700/zaia/all/construction/carpenter-man-working-roof_w14h2v'
                         }
                     ]
                 },
                 {
                     image: {
                         src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007946/zaia/construction/NewCostruction/scott-blake-RmUp5C1Vj-8-unsplash_zx5xwd.jpg',
-                        title: 'Buiness construction'
+                        title: 'Buiness construction',
+                        publicId: 'v1615312711/zaia/all/construction/scott-blake-RmUp5C1Vj-8-unsplash_qf6noh'
                     },
                     title: 'Buiness construction',
                     images: [
                         {
                             src:'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007946/zaia/construction/NewCostruction/scott-blake-RmUp5C1Vj-8-unsplash_zx5xwd.jpg',
-                            title: 'Buiness construction'
+                            title: 'Buiness construction',
+                            publicId: 'v1615312711/zaia/all/construction/scott-blake-RmUp5C1Vj-8-unsplash_qf6noh'
                         }
                     ]
                 }
@@ -917,51 +834,30 @@ export default function Services() {
             contents: [
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615312471/zaia/all/image_68_dl9t27.jpg',
+                        title: 'Fairhaven Ave',
+                        publicId: 'v1615324708/zaia/all/project3/image_60_uwqtxi'
                     },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
+                    text: 'Fairhaven Ave',
+                    url: '/projects/project3'
                 },
                 {
                     image: {
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
+                        title: 'Archwood St',
+                        publicId: 'v1615325637/zaia/all/project8/image_92_zmcjea'
                     },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
+                    text: 'Archwood St',
+                    url: '/projects/project8'
                 },
                 {
                     image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
+                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615313802/zaia/all/Screen_Shot_2021-01-07_at_5.36_1_m0rctg.jpg',
+                        title: 'Wellesley Ave, Los Angeles',
+                        publicId: 'v1615313802/zaia/all/project2/Screen_Shot_2021-01-07_at_5.36_1_m0rctg'
                     },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008140/zaia/projects/project5_rklkcm.jpg',
-                        title: '3rd St. Santa Monica'
-                    },
-                    text: '3rd St. Santa Monica',
-                    url: '/projects/project5'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008138/zaia/projects/project6_fwg55e.jpg',
-                        title: 'Bathroom Remodel'
-                    },
-                    text: 'Bathroom Remodel',
-                    url: '/projects/project6'
-                },
-                {
-                    image: {
-                        src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008136/zaia/projects/project7_jpqhpq.jpg',
-                        title: 'Hacienda Pl'
-                    },
-                    text: 'Hacienda Pl',
-                    url: '/projects/project7'
+                    text: 'Wellesley Ave, Los Angeles',
+                    url: '/projects/project2'
                 },
             ]
         }

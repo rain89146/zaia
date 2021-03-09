@@ -11,7 +11,6 @@ export default function ContentGridGallery(props) {
         <div className={styles.gridcon}>
             {
                 images.map((img,i) => {
-
                     const gird_style = {
                         display: 'grid',
                         gridArea: `${i+1} / 1 / auto / auto`
@@ -26,7 +25,7 @@ export default function ContentGridGallery(props) {
                                             return (
                                                 <div className={styles.gridrow} key={i}>
                                                     <div className={styles.imagecon}>
-                                                        <ImageCard src={image} />
+                                                        <ImageCard {...image} />
                                                     </div>
                                                 </div>
                                             )
@@ -40,7 +39,7 @@ export default function ContentGridGallery(props) {
                             <div key={i} style={gird_style}>
                                 <div className={styles.gridrow}>
                                     <div className={styles.imagecon}>
-                                        <ImageCard src={img[0]} />
+                                        <ImageCard {...img[0]} />
                                     </div>
                                 </div>
                             </div>

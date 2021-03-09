@@ -3,7 +3,8 @@ export default function About() {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007904/zaia/about/banner_daj7kv.jpg',
-                title: 'About us'
+                title: 'About us',
+                publicId: 'v1615312669/zaia/all/about/6_1_o74n3c'
             }
         },
         section_1: {
@@ -26,21 +27,27 @@ export default function About() {
             images: [
                 {
                     src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007904/zaia/about/grid1_ljz1ci.jpg',
+                    publicId: 'v1615312633/zaia/all/about/3d-rendering-architecture-model-modern-house-built-different-independent-levels_ify808'
                 },
                 {
                     src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008615/zaia/about/grid2_prgsd9.jpg',
+                    publicId: 'v1615312678/zaia/all/about/architecture-project-finishes-style_wcjwfo'
                 },
                 {
                     src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007904/zaia/about/grid3_aqqgds.jpg',
+                    publicId: 'v1615312670/zaia/all/about/construction-plans-of-architectural-project_tisq6f'
                 },
                 {
                     src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007907/zaia/about/grid4_lj5izd.jpg',
+                    publicId: 'v1615313819/zaia/all/about/OIU9KQ1-01_1_jz8gf5'
                 },
                 {
                     src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007904/zaia/about/grid5_lu0h8j.jpg',
+                    publicId: 'v1615312637/zaia/all/about/OIU9Q61-01_1_azmoe1'
                 },
                 {
                     src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615007903/zaia/about/grid6_fftmvs.jpg',
+                    publicId: 'v1615312633/zaia/all/about/three-dimension-rendering-house-plan_hsnp9b'
                 }
             ]
         },
@@ -85,7 +92,8 @@ export default function About() {
                     url: '/services/remodeling',
                     image:{
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008099/zaia/home/remodeling_hubti5.jpg',
-                        title: 'remodeling'
+                        title: 'remodeling',
+                        publicId: 'v1615312353/zaia/all/31_1_ypukp2'
                     }
                 },
                 {
@@ -93,7 +101,8 @@ export default function About() {
                     url: '/services/construction',
                     image:{
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008098/zaia/home/construction_gf0alm.jpg',
-                        title: 'construction'
+                        title: 'construction',
+                        publicId: 'v1615312358/zaia/all/image_37_vejkdp'
                     }
                 },
                 {
@@ -101,7 +110,8 @@ export default function About() {
                     url: '/services/design',
                     image:{
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008096/zaia/home/design_uknycq.jpg',
-                        title: 'design'
+                        title: 'design',
+                        publicId: 'v1615312354/zaia/all/34_1_cs6lwc'
                     }
                 }
             ]

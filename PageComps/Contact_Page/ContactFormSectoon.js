@@ -19,7 +19,10 @@ export default function ContactFormSectoon() {
                 </div>
             </ContentWrapper>
             <div className={styles.imagecon}>
-                <ImageCard src="https://res.cloudinary.com/dgqsldchb/image/upload/v1615008011/zaia/contact/contact_flau57.jpg"/>
+                <ImageCard 
+                    src="https://res.cloudinary.com/dgqsldchb/image/upload/v1615008011/zaia/contact/contact_flau57.jpg"
+                    publicId="v1615313828/zaia/all/contact/contact_vpq6uf"    
+                />
             </div>
         </div>
     )

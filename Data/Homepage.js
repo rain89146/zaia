@@ -5,7 +5,8 @@ export default function Homepage() {
             logo: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1614997736/zaia/home/lglogo_y5d2ca.png',
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008096/zaia/home/main_rnjl58.jpg',
-                title: 'Zaia'
+                title: 'Zaia',
+                publicId: 'v1615317352/zaia/all/Home_zk6eqn'
             }
         },
         section_2: {
@@ -15,7 +16,8 @@ export default function Homepage() {
                     url: '/services/remodeling',
                     image:{
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008099/zaia/home/remodeling_hubti5.jpg',
-                        title: 'remodeling'
+                        title: 'remodeling',
+                        publicId: 'v1615312353/zaia/all/31_1_ypukp2'
                     }
                 },
                 {
@@ -23,7 +25,8 @@ export default function Homepage() {
                     url: '/services/construction',
                     image:{
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008098/zaia/home/construction_gf0alm.jpg',
-                        title: 'construction'
+                        title: 'construction',
+                        publicId: 'v1615312358/zaia/all/image_37_vejkdp'
                     }
                 },
                 {
@@ -31,7 +34,8 @@ export default function Homepage() {
                     url: '/services/design',
                     image:{
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008096/zaia/home/design_uknycq.jpg',
-                        title: 'design'
+                        title: 'design',
+                        publicId: 'v1615312354/zaia/all/34_1_cs6lwc'
                     }
                 }
             ]

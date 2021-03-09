@@ -5,13 +5,15 @@ export default function Team() {
         section_0: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008507/zaia/team/banner_n1bn2l.jpg',
-                title: 'Our team'
+                title: 'Our team',
+                publicId: 'v1615320236/zaia/all/team/luca-bravo-bTxMLuJOff4-unsplash_x1xnxy'
             }
         },
         section_1: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008507/zaia/team/sun1_zn2gzh.jpg',
-                title: 'Jane'
+                title: 'Jane',
+                publicId: 'v1615320236/zaia/all/team/%E5%AD%99%E4%BF%AD1_1_xmca6e'
             },
             title: '孙俭 JANE',
             subtitle: '个人职业成绩介绍',
@@ -28,7 +30,8 @@ export default function Team() {
         section_2: {
             image: {
                 src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008508/zaia/team/sun2_yuinbf.jpg',
-                title: 'Jane'
+                title: 'Jane',
+                publicId: 'v1615320242/zaia/all/team/%E5%AD%99%E4%BF%AD2_1_we2iy9'
             },
             subtitle: '时尚领域',
             contents: [
@@ -82,7 +85,8 @@ export default function Team() {
                     url: '/services/remodeling',
                     image:{
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008099/zaia/home/remodeling_hubti5.jpg',
-                        title: 'remodeling'
+                        title: 'remodeling',
+                        publicId: 'v1615312353/zaia/all/31_1_ypukp2'
                     }
                 },
                 {
@@ -90,7 +94,8 @@ export default function Team() {
                     url: '/services/construction',
                     image:{
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008098/zaia/home/construction_gf0alm.jpg',
-                        title: 'construction'
+                        title: 'construction',
+                        publicId: 'v1615312358/zaia/all/image_37_vejkdp'
                     }
                 },
                 {
@@ -98,7 +103,8 @@ export default function Team() {
                     url: '/services/design',
                     image:{
                         src: 'https://res.cloudinary.com/dgqsldchb/image/upload/v1615008096/zaia/home/design_uknycq.jpg',
-                        title: 'design'
+                        title: 'design',
+                        publicId: 'v1615312354/zaia/all/34_1_cs6lwc'
                     }
                 }
             ]
