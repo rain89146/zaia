@@ -27,7 +27,7 @@ export default function ImageCard(props) {
         publicId: `${publicId}.webp`,
         crop: "fill",
         alt: title,
-        loading: "lazy",
+        // loading: "lazy",
         dpr: "auto",
         responsive: true,
         width: "auto",
@@ -41,7 +41,7 @@ export default function ImageCard(props) {
                     (!!publicId) ?
                     <Image {...cloudinary_setting}>
                         <Transformation fetchFormat="auto" crop="scale" quality="auto" />
-                        <Placeholder type="pixelate"></Placeholder>
+                        <Placeholder type="blur"></Placeholder>
                     </Image>
                     :
                     <img

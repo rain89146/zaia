@@ -11,7 +11,7 @@ export default function GridGallery({images}) {
                         cloudName: 'dgqsldchb',
                         publicId: `${img.publicId}.webp`,
                         crop: "fill",
-                        loading: "lazy",
+                        // loading: "lazy",
                         dpr: "auto",
                         responsive: true,
                         width: "auto",
@@ -24,7 +24,7 @@ export default function GridGallery({images}) {
                         <figure className={figure_style} key={i}>
                             <Image {...cloudinary_setting} className={styles.gallery_image} alt={`img_${i}`}>
                                 <Transformation fetchFormat="auto" crop="scale" quality="auto" />
-                                <Placeholder type="pixelate"></Placeholder>
+                                <Placeholder type="blur"></Placeholder>
                             </Image>
                         </figure>
                     )
