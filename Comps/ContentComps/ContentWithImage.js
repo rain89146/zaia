@@ -6,12 +6,9 @@ import Modal from '../ModalComps/Modal';
 import styles from './ContentWithImage.module.scss';
 import {Image, Transformation, Placeholder} from 'cloudinary-react';
 
-export default function ContentWithImage(props) {
+export default function ContentWithImage({contents}) {
     //  
     const [ModalShow, setModalShow] = useState(false);
-    
-    //
-    const {contents} = props;
 
     //  Modal control
     const ModalControl = () => setModalShow(!ModalShow);
@@ -24,6 +21,7 @@ export default function ContentWithImage(props) {
         <div className={styles.con}>
             {
                 contents.map((cnt, i) => {
+
                     let {image, title, subtitle, images} = cnt;
                     let content = cnt.contents;
 
@@ -98,7 +96,6 @@ function ContentImageCard({ title, publicId } ) {
         publicId: `${publicId}.webp`,
         crop: "fill",
         alt: title,
-        // loading: "lazy",
         dpr: "auto",
         responsive: true,
         width: "auto",

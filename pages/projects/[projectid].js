@@ -7,7 +7,7 @@ import RelatedContent from '../../PageComps/GlobalComps/RelatedContent';
 import LandscapeImageBanner from '../../Comps/ImageComps/LandscapeImageBanner';
 import ContentWithImageTitle from '../../Comps/ContentComps/ContentWithImageTitle';
 import ContentGridGallery from '../../Comps/Gallery/ContentGridGallery';
-import {SectionWrapper, MarginWrapper} from '../../Layout/SectionWrapper';
+import {MarginWrapper} from '../../Layout/SectionWrapper';
 
 export default function index(PageContent) {
     
