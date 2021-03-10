@@ -13,14 +13,10 @@ export default function InputElement(props) {
     const {valueUpdate, errorUpdate, disable, index} = props;
 
     //  Set the state
-    const [InputValue, setInputValue] = useState(value);
     const [InputError, setInputError] = useState(error);
 
     //  On change
-    const inputOnChange = (e) => {
-        setInputValue(e.target.value)
-        valueUpdate(e.target.value, index);
-    };
+    const inputOnChange = (e) => valueUpdate(e.target.value, index);
 
     //  On focus
     const inputOnFocus = () => {
@@ -51,7 +47,7 @@ export default function InputElement(props) {
         name,
         alt: label,
         maxLength: max,
-        value: InputValue,
+        value,
         onChange: (e) => inputOnChange(e),
         onFocus: (e) => inputOnFocus(e),
         onBlur: (e) => inputOnBlur(e),

@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import {useState} from 'react'
 export default function TextareaElement(props) {
 
     //  Get all values from props
@@ -8,7 +8,6 @@ export default function TextareaElement(props) {
     const {valueUpdate, errorUpdate, index} = props;
 
     //  Set the state
-    const [TextareaValue, setTextareaValue] = useState(value);
     const [TextareaError, setTextareaError] = useState(error);
 
     //  on focus
@@ -18,11 +17,7 @@ export default function TextareaElement(props) {
     }
 
     //  on change
-    const textareaOnChange = (e) => {
-        const {value} = e.target;
-        setTextareaValue(value);
-        valueUpdate(value, index);
-    }
+    const textareaOnChange = (e) => valueUpdate(e.target.value, index);
 
     //  Textarea config
     const textarea_config = { 
@@ -30,7 +25,7 @@ export default function TextareaElement(props) {
         name, 
         placeholder, 
         maxLength: max,
-        value: TextareaValue,
+        value,
         onFocus: (e)=>textareaOnFocus(e),
         onChange: (e)=>textareaOnChange(e),
         rows: 4,
