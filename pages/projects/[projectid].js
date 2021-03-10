@@ -1,5 +1,5 @@
 //  Data
-import Data from '../../Data/Projects'
+import Data from '../../Data/ProjectList'
 
 //  Components
 import MainLayout from '../../Layout/MainLayout';
