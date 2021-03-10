@@ -9,7 +9,8 @@ export default function Header(props) {
             <title>{title}</title>
             <meta property="og:title" content={title} key="title" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-            <link rel="manifest" href="/manifest.json" />
+            <link rel="manifest" href="/manifest.json"/>
+            <link rel="shortcut icon" href="/favicon.ico"/>
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta
                 name="viewport"
@@ -18,7 +19,7 @@ export default function Header(props) {
             {(!!description) && <meta name="description" content={description}/>}
             {(!!keywords) && <meta name="keywords" content={keywords}/>}
             <meta name="author" content="Zaia"/>
-            <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+            <link rel="apple-touch-icon" href="/logo.png"></link>
             <meta name="theme-color" content="#242b2f" />
         </Head>
     )

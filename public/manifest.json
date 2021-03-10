@@ -4,5 +4,12 @@
     "theme_color": "#242b2f",
     "background_color": "#242b2f",
     "display": "fullscreen",
-    "orientation": "portrait"
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "/logo.png",
+        "sizes": "36x36",
+        "type": "image/png"
+      }
+    ]
   }
