@@ -1,0 +1,8 @@
+{
+    "name": "Zaia",
+    "short_name": "Progressive",
+    "theme_color": "#242b2f",
+    "background_color": "#242b2f",
+    "display": "fullscreen",
+    "orientation": "portrait"
+  }
