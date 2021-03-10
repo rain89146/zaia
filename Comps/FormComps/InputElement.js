@@ -43,36 +43,30 @@ export default function InputElement(props) {
         }
     }
 
-    //  Error
-    let errorbox = (has_error === true)
-        ?   <div className={styles.errorbox}>{InputError}</div>
-        :   null;
+    //  Input config
+    const input_config = { 
+        id: name,
+        type: element_type, 
+        placeholder,
+        name,
+        alt: label,
+        maxLength: max,
+        value: InputValue,
+        onChange: (e) => inputOnChange(e),
+        onFocus: (e) => inputOnFocus(e),
+        onBlur: (e) => inputOnBlur(e),
+        disabled: disable
+    }
 
-    //  Required sign
-    let requried_sign = (required)
-        ?   <span>*</span>
-        :   null;
- 
     return (
         <div className={styles.inpitcon}>
             <div className={styles.labelcon}>
-                <label>{label}{requried_sign}</label>
+                <label htmlFor={name}>{label}{(required) && <span>*</span>}</label>
             </div>
             <div className={styles.input}>
-                <input 
-                    type={element_type} 
-                    placeholder={placeholder}
-                    name={name}
-                    alt={label}
-                    maxLength={max}
-                    value={InputValue}
-                    onChange={(e) => inputOnChange(e)}
-                    onFocus={(e)=> inputOnFocus(e)}
-                    onBlur={(e)=> inputOnBlur(e)}
-                    disabled={disable}
-                />
+                <input {...input_config}/>
             </div>
-            {errorbox}
+            {(has_error === true) && <div className={styles.errorbox}>{(!!InputError) ? InputError : error }</div>}
         </div>
     )
 }
