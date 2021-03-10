@@ -8,34 +8,13 @@ export default function TextareaElement(props) {
     const {valueUpdate, errorUpdate, index} = props;
 
     //  Set the state
-    const [TextareaValue, setTextareaValue] = useState('');
+    const [TextareaValue, setTextareaValue] = useState(value);
     const [TextareaError, setTextareaError] = useState(error);
-
-    //  Reffere to input element
-    const textareaElement = useRef(null);
-    
-    //  required sign
-    let requried_sign = (required)
-        ?   <span>*</span>
-        :   null;
 
     //  on focus
     const textareaOnFocus = () => {
         setTextareaError(null);
         errorUpdate(false, index);
-    }
-    
-    //  on blur
-    const textareaOnBlur = (e) => {
-        const {value} = e.target;
-        if(required){
-            if(value === ''){
-                setTextareaError(error)
-                errorUpdate(true, index);
-            }else{
-                errorUpdate(false, index);
-            }
-        }
     }
 
     //  on change
@@ -45,30 +24,28 @@ export default function TextareaElement(props) {
         valueUpdate(value, index);
     }
 
-    //  error box
-    let errorbox = (has_error === true)
-        ?   <div className={styles.errorbox}>{TextareaError}</div>
-        :   null;
+    //  Textarea config
+    const textarea_config = { 
+        id: name,
+        name, 
+        placeholder, 
+        maxLength: max,
+        value: TextareaValue,
+        onFocus: (e)=>textareaOnFocus(e),
+        onChange: (e)=>textareaOnChange(e),
+        rows: 4,
+        disabled: disable
+    }
 
     return (
         <div className={styles.textcon}>
             <div className={styles.labelcon}>
-                <label htmlFor={textareaElement}>{label}{requried_sign}</label>
+                <label htmlFor={name}>{label}{(required) && <span>*</span>}</label>
             </div>        
             <div className={styles.textareacon}>
-                <textarea 
-                    name={name} 
-                    placeholder={placeholder} 
-                    maxLength={max} 
-                    value={TextareaValue}
-                    onBlur = {(e)=>textareaOnBlur(e)}
-                    onFocus ={(e)=>textareaOnFocus(e)}
-                    onChange ={(e)=>textareaOnChange(e)}
-                    rows={4}
-                    disabled={disable}
-                ></textarea>
+                <textarea {...textarea_config}></textarea>
             </div>
-            {errorbox}
+            {(has_error === true) && <div className={styles.errorbox}>{(!!TextareaError) ? TextareaError : error}</div>}
         </div>
     )
 }
