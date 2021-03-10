@@ -15,7 +15,7 @@ export default function projects() {
     //  Render
     return (
         <MainLayout title={'ZAIA'}>{
-            ( PageContent !== null ) && <SectionOne {...PageContent.project_list}/>
+            ( PageContent !== null ) && <SectionOne {...PageContent}/>
         }</MainLayout>
     )
 }
