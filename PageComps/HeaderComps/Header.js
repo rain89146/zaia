@@ -5,6 +5,7 @@ export default function Header(props) {
     const {title, description, keywords} = props;
     return (
         <Head>
+            <meta charset="utf-8" />
             <title>{title}</title>
             <meta property="og:title" content={title} key="title" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
