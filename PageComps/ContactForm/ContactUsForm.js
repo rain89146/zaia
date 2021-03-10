@@ -88,6 +88,7 @@ export default function ContactUsForm() {
         const count = false_count(FormElement);
         if(count === 0){
 
+            //  Disable form, prevent repeat submission
             setIsSubmitting(true);
             disable_fields();
 
@@ -100,6 +101,9 @@ export default function ContactUsForm() {
 
                 setSubmitResult(true);
                 setModalShowing(true);
+
+                //  reset form
+                form_reset();
 
             }, 2000);
         }
@@ -153,6 +157,11 @@ export default function ContactUsForm() {
         setSubmitResult(null);
         setSubmitted(false);
         setModalShowing(false);
+    }
+
+    //  Form reset
+    const form_reset = () => {
+        FormElement.forEach((el, i)=> { value_update('', i) });
     }
 
     //  close the modal, if submittion success
